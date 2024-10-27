@@ -558,40 +558,25 @@ html {
   font-family: "Work Sans", system-ui, sans-serif;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-16 {
   margin-left: 4rem;
-}
-
-.mt-\[200px\] {
-  margin-top: 200px;
-}
-
-.mt-\[287px\] {
-  margin-top: 287px;
-}
-
-.ml-8 {
-  margin-left: 2rem;
 }
 
 .ml-7 {
   margin-left: 1.75rem;
 }
 
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
 .flex {
@@ -606,8 +591,17 @@ html {
   height: 100vh;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .w-\[411px\] {
   width: 411px;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -618,8 +612,28 @@ html {
   width: 100vw;
 }
 
-.w-\[20\%\] {
-  width: 20%;
+.max-w-\[411px\] {
+  max-width: 411px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.max-w-\[33\%\] {
+  max-width: 33%;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-col {
@@ -630,30 +644,20 @@ html {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-8 {
-  gap: 2rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-9 {
   gap: 2.25rem;
-}
-
-.space-x-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0px * var(--tw-space-x-reverse));
-  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.text-pretty {
-  text-wrap: pretty;
 }
 
 .bg-gray-300 {
@@ -671,9 +675,9 @@ html {
   line-height: 1.5rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-lg\/5 {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
 }
 
 .text-xl\/5 {
@@ -681,31 +685,13 @@ html {
   line-height: 1.25rem;
 }
 
+.text-xl\/6 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
 .font-medium {
   font-weight: 500;
-}
-
-.tracking-tighter {
-  letter-spacing: -0.05em;
-}
-
-.text-figma-nav-green {
-  --tw-text-opacity: 1;
-  color: rgb(0 146 124 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-\[61646B\] {
-  color: 61646B;
 }
 
 .text-\[\#61646B\] {
@@ -713,15 +699,27 @@ html {
   color: rgb(97 100 107 / var(--tw-text-opacity));
 }
 
+.text-figma-nav-green {
+  --tw-text-opacity: 1;
+  color: rgb(0 146 124 / var(--tw-text-opacity));
+}
+
 .nav-li {
   display: flex;
   align-items: center;
   gap: 1.75rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.5rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(0 48 89 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
+  .nav-li {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
 }
 
 .underline-custom {
@@ -741,4 +739,32 @@ html {
   /* Adjust thickness */
   background-color: #00927C;
   /* Use the custom color */
+}
+
+@media (min-width: 1280px) {
+  .xl\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .xl\:ml-7 {
+    margin-left: 1.75rem;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xl\:gap-9 {
+    gap: 2.25rem;
+  }
+
+  .xl\:text-2xl\/6 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-xl\/5 {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
 }
