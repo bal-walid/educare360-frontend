@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'figma-blue': '#003059',
+        'figma-nav-green': '#00927C'
+      },
+    },
   },
   plugins: [],
 }

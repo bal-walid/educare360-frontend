@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Work Sans", system-ui, sans-serif;
+  }
+}
+
+.nav-li {
+  @apply text-figma-blue font-medium flex text-2xl/6 items-center gap-7;
+}
+
+.underline-custom {
+  position: relative;
+  display: inline-block; /* To ensure the pseudo-element aligns properly */
+}
+
+.underline-custom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px; /* Position the underline 8px below the text */
+  height: 1px; /* Adjust thickness */
+  background-color: theme('colors.figma-nav-green'); /* Use the custom color */
+}

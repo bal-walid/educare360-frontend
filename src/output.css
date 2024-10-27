@@ -554,16 +554,60 @@ video {
   display: none;
 }
 
+html {
+  font-family: "Work Sans", system-ui, sans-serif;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.mt-\[200px\] {
+  margin-top: 200px;
+}
+
+.mt-\[287px\] {
+  margin-top: 287px;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-7 {
+  margin-left: 1.75rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
+.w-\[411px\] {
+  width: 411px;
 }
 
 .w-full {
@@ -574,32 +618,42 @@ video {
   width: 100vw;
 }
 
-.w-\[400px\] {
-  width: 400px;
-}
-
 .w-\[20\%\] {
   width: 20%;
 }
 
-.max-w-sm {
-  max-width: 24rem;
+.flex-col {
+  flex-direction: column;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.items-center {
+  align-items: center;
 }
 
-.max-w-lg {
-  max-width: 32rem;
+.gap-10 {
+  gap: 2.5rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.gap-6 {
+  gap: 1.5rem;
 }
 
-.rounded-\[21px\] {
-  border-radius: 21px;
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.text-pretty {
+  text-wrap: pretty;
 }
 
 .bg-gray-300 {
@@ -612,57 +666,79 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+.text-2xl\/6 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
-.fill-blue-900 {
-  fill: #1e3a8a;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.fill-red-300 {
-  fill: #fca5a5;
+.text-xl\/5 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
-.fill-red-200 {
-  fill: #fecaca;
+.font-medium {
+  font-weight: 500;
 }
 
-.fill-red-500 {
-  fill: #ef4444;
+.tracking-tighter {
+  letter-spacing: -0.05em;
 }
 
-.px-96 {
-  padding-left: 24rem;
-  padding-right: 24rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-green-800 {
+.text-figma-nav-green {
   --tw-text-opacity: 1;
-  color: rgb(22 101 52 / var(--tw-text-opacity));
+  color: rgb(0 146 124 / var(--tw-text-opacity));
 }
 
-.text-red-400 {
+.text-gray-500 {
   --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:w-screen {
-    width: 100vw;
-  }
+.text-\[61646B\] {
+  color: 61646B;
+}
+
+.text-\[\#61646B\] {
+  --tw-text-opacity: 1;
+  color: rgb(97 100 107 / var(--tw-text-opacity));
+}
+
+.nav-li {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(0 48 89 / var(--tw-text-opacity));
+}
+
+.underline-custom {
+  position: relative;
+  display: inline-block;
+  /* To ensure the pseudo-element aligns properly */
+}
+
+.underline-custom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  /* Position the underline 8px below the text */
+  height: 1px;
+  /* Adjust thickness */
+  background-color: #00927C;
+  /* Use the custom color */
 }
