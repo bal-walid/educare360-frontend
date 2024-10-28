@@ -12,6 +12,35 @@
   @apply text-figma-blue font-medium flex text-xl/6 xl:text-2xl/6 items-center gap-7;
 }
 
+.absolute-center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+}
+
+.mobile-nav-active {
+  @apply bg-figma-blue w-20 h-20 rounded-[50%] left-[50%] top-0 -translate-y-1/2 -translate-x-1/2
+}
+
+.mobile-nav-active img {
+  @apply w-14 h-14;
+}
+
+.mobile-nav-1 {
+  @apply w-10 h-10 rounded-2xl max-[380px]:left-[20%] left-[25%] top-4
+}
+
+.mobile-nav-2 {
+  @apply w-10 h-10 rounded-2xl max-[380px]:right-[20%] right-[25%]  top-4
+}
+
+.mobile-nav-3 {
+  @apply w-10 h-10 rounded-2xl max-[380px]:left-[3%] left-[10%] bottom-2
+}
+
+.mobile-nav-4 {
+  @apply w-10 h-10 rounded-2xl max-[380px]:right-[3%] right-[10%] bottom-2
+}
+
+
 .underline-custom {
   position: relative;
   display: inline-block; /* To ensure the pseudo-element aligns properly */

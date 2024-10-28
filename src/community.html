@@ -10,7 +10,24 @@
 </head>
 <body class="w-screen h-screen bg-gray-300">
   <div class="w-full h-full flex">
-    <nav class="bg-white w-1/3 max-w-[350px]">
+    <nav class="min-[501px]:hidden w-full bg-white h-24 rounded-t-[50%] fixed bottom-0">
+      <div class="absolute mobile-nav-4" >
+        <a href="index.html"><img class="absolute-center" src="./assets/icons/home.svg" alt=""></a>
+      </div>
+      <div class="absolute mobile-nav-1">
+        <a href="#"><img class="absolute-center" src="./assets/icons/articles.svg" alt=""></a>
+      </div>
+      <div class="absolute mobile-nav-2" >
+        <a href="programs.html"><img class="absolute-center" src="./assets/icons/programs.svg" alt=""></a>
+      </div>
+      <div class="absolute mobile-nav-active" >
+        <a href="#"><img class="absolute-center" src="./assets/icons/community-mobile-active.svg" alt=""></a>
+      </div>
+      <div class="absolute mobile-nav-3" >
+        <a href="settings.html"><img class="absolute-center" src="./assets/icons/settings.svg" alt=""></a>
+      </div>
+    </nav>
+    <nav class="bg-white max-[500px]:hidden w-1/3 max-w-[411px]">
       <img src="assets/text-logo.png" alt="">
       <div class="flex items-center gap-4 xl:gap-9 justify-center xl:justify-start xl:ml-7 mt-9">
         <img src="assets/avatar.png" alt="">
@@ -43,6 +60,7 @@
     </ul>
     
     </nav>
+    
     <main class="flex-1">
 
     </main>
