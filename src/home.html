@@ -7,30 +7,81 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script> 
 </head>
-<body class="w-screen h-screen bg-red-700">
+<body class="w-screen h-screen bg-[#ccf0ec]">
   <div class="">
     <!--nav bar-->
-    <nav  class='bg-transparent  max-h-9'>
-        <div class="container flex justify-between py-5 sm:py-6 " > 
+    <!-- version desktop -->
+    <nav  class=' max-[501px]:hidden bg-transparent  max-h-9'>
+        <div class="container flex justify-between py-5 sm:py-6 min-w-full " > 
         <!--logo section-->
                   <div> 
-                 <a target="_blank" href="#"><img class='size-40 -mt-14 hover:scale-125' src="assets/text-logo.png" alt="" /></a>   
+                 <a target="_blank" href="#"><img class='  hover:scale-125' src="assets/text-logo.png" alt="" /></a>   
                   </div>
-        <!--logo section-->
-            <div class=''>
-                <ul class='flex items-center gap-10'>
-                    <li class=' '> 
-                        <button  class='  ' >
-                        Sign up </button></li>
-                    <li class=' '> 
-                            <button  class='' >
-                            Log in </button></li>
+        <!--link section-->
+            <div class='container flex justify-end gap-32 py-5 sm:py-6  px-20'>
+                <ul class='flex items-center gap-10 text-xl font-semibold '>
                     
-                </ul>
+                    <li class=' '> 
+                      
+                         <button  class=' text-[#003059]  ' >
+                              Support </button></li>
+                              <li class=' '> 
+                                <button  class='text-[#003059] ' >
+                                Features </button></li>
+                    <li class=' '> 
+                         <button  class='text-[#003059] ' >
+                        About </button></li>
+                      </ul>
+                      <ul class='flex justify-between gap-14 text-xl font-semibold '>
+
+                      <li class=' '> 
+                            <button  class=' text-[#00927C]  hover:scale-125 py-2 px-4' >
+                              Log in </button></li>
+                              
+                        <li class=' '> 
+                          <button  class=' border-2 border-white shadow-xl
+                           bg-[#003059] text-white py-2 px-4 rounded-md
+                           hover:text-[#003059] hover:bg-white hover:border-[#003059] ' >
+                          Sign up </button></li>
+                        </ul>
+                        
+                    
+                
             </div>
             </div>
     </nav>
+
+
+     <!-- version tablette-->
+     <nav  class=' min-[501px]:hidden max-[780px]:hidden bg-transparent  max-h-9'>
+      <div class="container flex justify-between py-5 sm:py-6 min-w-full " > 
+      <!--logo section-->
+                <div> 
+               <a target="_blank" href="#"><img class='  hover:scale-125' src="assets/text-logo.png" alt="" /></a>   
+                </div>
+      <!--link section-->
+          <div class='container flex justify-end gap-32 py-5 sm:py-6  px-20'>
+             
+                    <ul class='flex justify-between gap-14 text-xl font-semibold '>
+
+                    <li class=' '> 
+                          <button  class=' text-[#00927C]  hover:scale-125 py-2 px-4' >
+                            Log in </button></li>
+                            
+                      <li class=' '> 
+                        <button  class=' border-2 border-white shadow-xl
+                         bg-[#003059] text-white py-2 px-4 rounded-md
+                         hover:text-[#003059] hover:bg-white hover:border-[#003059] ' >
+                        Sign up </button></li>
+                      </ul>
+                      
+                  
+              
+          </div>
+          </div>
+  </nav>
   </div>
 </body>
 </html>
