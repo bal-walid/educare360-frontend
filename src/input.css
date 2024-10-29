@@ -40,6 +40,9 @@
   @apply w-10 h-10 rounded-2xl max-[380px]:right-[3%] right-[10%] bottom-2
 }
 
+.tablet-nav-item {
+  @apply inline-flex flex-col items-center gap-1
+}
 
 .underline-custom {
   position: relative;
