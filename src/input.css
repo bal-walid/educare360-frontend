@@ -9,7 +9,7 @@
 }
 
 .nav-li {
-  @apply text-figma-blue font-medium flex text-xl/6 xl:text-2xl/6 items-center gap-7;
+  @apply text-figma-blue font-medium flex text-xl items-center gap-7 mb-4;
 }
 
 .absolute-center {
