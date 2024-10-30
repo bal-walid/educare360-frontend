@@ -5,6 +5,12 @@
 @layer base {
   html {
     font-family: "Work Sans", system-ui, sans-serif;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    height: 100%;
+    overflow: hidden;
   }
 }
 
