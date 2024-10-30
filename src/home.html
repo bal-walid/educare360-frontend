@@ -12,40 +12,43 @@
 <body class="w-screen h-screen bg-[#ccf0ec]">
   <div class="">
     <!--nav bar-->
-    <!-- version desktop -->
-    <nav  class=' max-[501px]:hidden bg-transparent  max-h-9'>
+    <!-- version pc-->
+    <nav  class='max-[1025px]:hidden bg-transparent -mt-6  max-h-9 fixed top-0 w-screen '>
         <div class="container flex justify-between py-5 sm:py-6 min-w-full " > 
         <!--logo section-->
                   <div> 
-                 <a target="_blank" href="#"><img class='  hover:scale-125' src="assets/text-logo.png" alt="" /></a>   
+                 <a target="_blank" href="#"><img class='  hover:scale-105' src="assets/text-logo.png" alt="" /></a>   
                   </div>
         <!--link section-->
-            <div class='container flex justify-end gap-32 py-5 sm:py-6  px-20'>
-                <ul class='flex items-center gap-10 text-xl font-semibold '>
-                    
-                    <li class=' '> 
-                      
-                         <button  class=' text-[#003059]  ' >
-                              Support </button></li>
-                              <li class=' '> 
-                                <button  class='text-[#003059] ' >
-                                Features </button></li>
-                    <li class=' '> 
-                         <button  class='text-[#003059] ' >
-                        About </button></li>
-                      </ul>
-                      <ul class='flex justify-between gap-14 text-xl font-semibold '>
+            <div class='container flex justify-end gap-6 py-5 sm:py-6  px-20'>
+                
+                        <ul class='flex  gap-2 text-xs  font-semibold '>
 
-                      <li class=' '> 
-                            <button  class=' text-[#00927C]  hover:scale-125 py-2 px-4' >
-                              Log in </button></li>
-                              
-                        <li class=' '> 
-                          <button  class=' border-2 border-white shadow-xl
-                           bg-[#003059] text-white py-2 px-4 rounded-md
-                           hover:text-[#003059] hover:bg-white hover:border-[#003059] ' >
-                          Sign up </button></li>
-                        </ul>
+                          <li class=' '> 
+                            <button  class=' text-[#003059] hover:scale-105  py-2 px-4' >
+                            Features</button></li>
+                                  
+                            <li class=' '> 
+                              <button  class=' text-[#003059] hover:scale-105  py-2 px-4' >
+                              About </button></li>
+
+                              <li class=' '> 
+                                <button  class=' text-[#003059] hover:scale-105  py-2 px-4' >
+                                Support </button></li>
+                            </ul>
+
+                            <ul class='flex  gap-2 text-xs  font-semibold '>
+
+                              <li class=' '> 
+                                    <button  class=' text-[#00927C]  hover:scale-125 py-2 px-4' >
+                                      Log in </button></li>
+                                      
+                                <li class=' '> 
+                                  <button  class=' border-1 border-white shadow-xl
+                                   bg-[#003059] text-white py-2 px-4 rounded-md
+                                   hover:text-[#003059] hover:bg-white hover:border-[#003059] ' >
+                                  Sign up </button></li>
+                                </ul>
                         
                     
                 
@@ -55,16 +58,16 @@
 
 
      <!-- version tablette-->
-     <nav  class=' min-[501px]:hidden max-[780px]:hidden bg-transparent  max-h-9'>
+     <nav  class=' max-[501px]:hidden min-[1024px]:hidden bg-transparent  max-h-9'>
       <div class="container flex justify-between py-5 sm:py-6 min-w-full " > 
       <!--logo section-->
                 <div> 
-               <a target="_blank" href="#"><img class='  hover:scale-125' src="assets/text-logo.png" alt="" /></a>   
+               <a target="_blank" href="#"><img class='  hover:scale-105' src="assets/text-logo.png" alt="" /></a>   
                 </div>
       <!--link section-->
           <div class='container flex justify-end gap-32 py-5 sm:py-6  px-20'>
              
-                    <ul class='flex justify-between gap-14 text-xl font-semibold '>
+                    <ul class='flex justify-between gap-14 text-xs font-semibold '>
 
                     <li class=' '> 
                           <button  class=' text-[#00927C]  hover:scale-125 py-2 px-4' >
@@ -82,6 +85,66 @@
           </div>
           </div>
   </nav>
+
+
+  <!-- version mobile-->
+  <nav  class=' min-[501px]:hidden bg-transparent  max-h-9'>
+   
+</nav>
+
+<!-- HERO SECTION -->
+<!-- DESKTOP -->
+<div class="max-[1025px]:hidden relative mt-[8%]  ml-5 z-10 ">
+  <div class="container  sm:py-0  fixed">
+      <div class=" grid grid-cols-1
+      sm:grid-cols-2 place-items-center 
+      ">
+     
+      <!-- text-content section -->
+      <div  class='space-y-7 sm:order-2 ml-28 mt-12'>
+          <h1 class='text-[#00927C] font-bold text-4xl'>Take care of your 
+
+            mental health!</h1>
+          <p  class='text-xl text-[#003059] lg:pr-[60px]'>Empowering students to achieve academic excellence 
+
+            while nurturing mental well-being, fostering a balanced and
+            
+             thriving journey toward personal and professional success.
+            
+            
+            </p>
+          <!-- button section -->
+          <div  class='flex items-center gap-[70px] pt-14'>
+              
+             <button  class=' whitespace-pre bg-gradient-to-r from-[#003059] from-70% to-[#0067BF]   px-24 py-3
+               rounded-2xl text-white font-semibold shadow-xl text-center
+               hover:scale-110 text-xl '> Sign Up</button>
+
+               <button  class='whitespace-pre bg-gradient-to-r from-[#00927C] from-60%  to-[#7bd3c6]  px-24 py-3
+               rounded-2xl text-white font-semibold shadow-xl text-center
+               hover:scale-110 text-xl '>Sign In</button>
+          </div>
+      </div>
+      
+<!-- image section -->
+<div  class='order-1 sm:order-2 size-80 -mt-10 '>
+  <img src="assets/sadness.png" alt="" />
+</div>
+      
+      </div>
+  </div>
+</div>
+
+<!-- foot -->
+
+<div class="flex justify-center items-end h-screen overflow-hidden">
+  <div class="w-[200vw] h-[200vw] bg-white rounded-full fixed bottom-[-2475px]"></div>
+</div>
+
+
+
+
+</div>
   </div>
 </body>
 </html>
