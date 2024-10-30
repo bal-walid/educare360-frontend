@@ -5,11 +5,17 @@
 @layer base {
   html {
     font-family: "Work Sans", system-ui, sans-serif;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    height: 100%;
+    overflow: hidden;
   }
 }
 
 .nav-li {
-  @apply text-figma-blue font-medium flex text-xl/6 xl:text-2xl/6 items-center gap-7;
+  @apply text-figma-blue font-medium flex text-xl items-center gap-7 mb-4;
 }
 
 .absolute-center {
