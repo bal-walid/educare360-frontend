@@ -165,15 +165,13 @@
       </nav>
 
       <main class="bg-[#F2E9EC] flex-1 flex flex-col items-center overflow-y-auto">
-        <div
-          class="relative flex  bg-[#eed7df] leading-9 text-2xl text-[#003059] rounded-[20px] shadow mt-8 pl-14 pr-28 py-5 font-semibold"
-        >
-          <p>These might help <br> with how you're <br> feeling!</p>
-          <img class="absolute right-0 top-0 translate-x-1/2 -translate-y-[5%] w-1/2" src="./assets/shy.png" alt="Embarassment">
+        <div class="grid grid-cols-3 items-center justify-center bg-[#EED7DF] w-[calc(100%-60px)] max-w-[500px] min-h-[180px] mx-[30px] mt-7 rounded-[30px] shadow">
+          <p class="col-span-2 w-2/3 place-self-center pl-4 text-lg min-[380px]:text-xl min-[450px]:text-2xl sm:text-3xl text-figma-blue font-semibold">These might help with how you’re feeling!</p>
+          <img class="w-36 h-36 min-[380px]:w-40 min-[380px]:h-40 relative self-end ml-auto top-4 left-4" src="./assets/shy.png" alt="">
         </div>
-        <div  class="mt-12 bg-white border-[1px] border-[#ED2469] relative pl-14 py-2 rounded-3xl w-1/2" >
+        <div  class="mt-12 bg-white border-[1px] border-[#ED2469] relative pl-14 py-2 rounded-3xl max-w-[800px] w-[calc(100%-40px)] mx-[20px]" >
           <img class="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6" src="./assets/icons/search.svg" alt="search">
-          <input class="w-[90%] type="text" placeholder="Search all..." name="search" id="search">
+          <input class="w-[95%] focus:outline-none type="text" placeholder="Search all..." name="search" id="search">
         </div>
         <div class="w-full p-8 grid gap-4 justify-center grid-cols-[repeat(auto-fit,_minmax(270px,_1fr))]">
           <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm  ">
