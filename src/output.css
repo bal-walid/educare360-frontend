@@ -729,6 +729,22 @@ body {
   width: 100vw;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -754,6 +770,10 @@ body {
 
 .grid-cols-\[repeat\(auto-fit\2c _minmax\(300px\2c _1fr\)\)\] {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c _minmax\(270px\2c _1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 
 .flex-col {
