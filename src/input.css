@@ -64,3 +64,31 @@
   height: 1px; /* Adjust thickness */
   background-color: theme('colors.figma-nav-green'); /* Use the custom color */
 }
+
+.sliding-part {
+  @apply bg-white h-20 w-7 relative
+}
+
+.sleep-info {
+  @apply absolute right-[calc(100%+24px)] top-1/2 -translate-y-1/2 text-nowrap text-center text-[#61646B]
+}
+
+.sleep-info h4 {
+  @apply text-xl font-semibold w-24
+}
+
+.sleep-info p {
+  @apply font-light
+}
+
+.faux-gap {
+  @apply h-4 bg-white w-7
+}
+
+.circle {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-red-300 rounded-full
+}
+
+.character-container {
+  @apply h-16 w-16 absolute top-1/2 -translate-y-1/2 left-[calc(100%+24px)] bg-red-100 rounded-md
+}
