@@ -70,7 +70,7 @@
 }
 
 .sleep-info {
-  @apply absolute right-[calc(100%+24px)] top-1/2 -translate-y-1/2 text-nowrap text-center text-[#61646B]
+  @apply  text-[#61646B] text-center
 }
 
 .sleep-info h4 {
@@ -82,7 +82,7 @@
 }
 
 .faux-gap {
-  @apply h-4 bg-white w-7
+  @apply h-4 bg-white w-7 col-span-3
 }
 
 .circle {
@@ -90,5 +90,9 @@
 }
 
 .character-container {
-  @apply h-16 w-16 absolute top-1/2 -translate-y-1/2 left-[calc(100%+24px)] bg-red-100 rounded-md
+  @apply h-20 w-20 rounded-2xl shadow flex justify-center items-end
+}
+
+.character-container img {
+
 }
