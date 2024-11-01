@@ -97,20 +97,20 @@
         >
       </nav>
       <!-- desktop-nav -->
-      <nav class="bg-white hidden lg:block w-1/4 overflow-y-auto">
+      <nav class="bg-white hidden lg:block w-1/4 overflow-y-auto px-3">
         <img src="assets/text-logo.png" alt="" />
         <div
-          class="flex items-center gap-4 justify-center  mt-8"
+          class="flex items-center gap-3 justify-center  mt-3"
         >
-          <img class="hidden xl:block xl:w-16 xl:h-16" src="assets/avatar.png" alt="" />
+          <img class="hidden xl:block xl:h-10 xl:w-10 " src="assets/avatar.png" alt="" />
           <div>
-            <p class="text-lg/6 font-medium">Jane Doe</p>
-            <p class="text-md/5 font-medium text-[#61646B]">
+            <p class="text-lg font-medium">Jane Doe</p>
+            <p class="text-md font-medium text-[#61646B]">
               janedoe@example.com
             </p>
           </div>
         </div>
-        <ul class="w-fit flex flex-col mx-auto mt-16">
+        <ul class="w-fit flex flex-col mx-auto mt-8">
           <li class="nav-li">
             <img
               src="./assets/icons/dashboard.svg"
@@ -153,7 +153,7 @@
             />
             <a href="settings.html">Settings</a>
           </li>
-          <li class="nav-li mt-4">
+          <li class="nav-li mt-3">
             <img
               src="./assets/icons/logout.svg"
               alt="Settings Icon"
@@ -164,9 +164,134 @@
         </ul>
       </nav>
 
-      <main class="flex-1 flex overflow-y-auto">
-        <div></div>
+      <main class="flex-1 flex overflow-y-auto bg-[#ccf0ec]">
+    <!-- Container -->
+  <div class="max-w-4xl mx-auto  rounded-lg shadow-lg p-6">
+
+    <!-- Share Thoughts Section -->
+    <div class="relative bg-blue-50 rounded-lg p-8 shadow-lg max-w-2xl mx-auto" style="margin-top: 20px;">
+      <!-- Image -->
+      <img src="assets/joy.png" alt="Character" 
+           class="absolute -top-10 left-4 w-24 h-24 z-10" 
+           style="width: 450px; height: 450px;  left: -190px; bottom: -130px;">
+    
+      <!-- Content -->
+      <div class="ml-40"> <!-- Ajoute de l'espace à gauche pour que le texte soit aligné avec l'image -->
+        <h2 class="text-xl font-semibold text-[#0A0E6E] mb-4 l" style="margin-left: 50px;">Share with us your thoughts</h2>
+        <!-- Input Box -->
+        <div class="bg-white p-4 rounded-lg border  border-gray-200 shadow-inner mb-4" style="border-radius: 3%; margin-top: 15px;">
+          <textarea style="height: 100px; width: 600px; resize: none; margin-bottom: 50px;" 
+          placeholder="What's on your mind?" 
+          class="w-full p-4 border-none outline-none text-gray-700"></textarea>
+                  <!-- Publish Button -->
+        <button  class=' border-2 border-white shadow-xl
+        bg-[#003059] text-white py-2 px-4 rounded-md
+        hover:text-[#003059] hover:bg-white hover:border-[#003059] ' style="left: 200px;">
+       Publish         
+      </button>   
+    </div>
+   </div>
+    </div>
+    
+    <!-- Main Content Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6  ">
+      
+
+      <!-- Your Feed Section -->
+      <div>
+
+        <h3 class="text-lg font-semibold text-blue-800 mb-4" style="margin-top: 20px;">Your feed</h3>
+        <div class="space-y-4">
+          <div class="flex items-start bg-blue-100 rounded-lg p-4">
+            <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+            <div class="ml-4">
+              <h4 class="font-semibold">John</h4>
+              <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+          </div>
+          <!-- Repeat post structure -->
+          <div class="flex items-start bg-blue-100 rounded-lg p-4">
+            <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+            <div class="ml-4">
+              <h4 class="font-semibold">John</h4>
+              <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+          </div>
+          <div class="flex items-start bg-blue-100 rounded-lg p-4">
+            <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+            <div class="ml-4">
+              <h4 class="font-semibold">John</h4>
+              <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between" >
+        <!-- React Item 1 -->
+        <div class="flex flex-col items-center mx-1"> <!-- Ajout de mx-1 pour réduire l'espace latéral -->
+          <div class="bg-red-200 p-1 rounded-lg hover:bg-red-300 transition duration-300 transform hover:scale-110">
+            <img src="assets/angry.png" alt="Angry" class="w-6 h-6 rounded-lg"> <!-- Réduction de la taille de l'image -->
+          </div>
+          <p class="text-xs text-center">Angry</p> <!-- Réduction de la taille du texte -->
+        </div>
+        
+        <!-- React Item 2 -->
+        <div class="flex flex-col items-center mx-1">
+          <div class="bg-yellow-200 p-1 rounded-lg hover:bg-yellow-300 transition duration-300 transform hover:scale-110">
+            <img src="assets/happy.png" alt="Happy" class="w-6 h-6 rounded-lg">
+          </div>
+          <p class="text-xs text-center">Happy</p>
+        </div>
+      
+        <!-- React Item 3 -->
+        <div class="flex flex-col items-center mx-1">
+          <div class="bg-blue-200 p-1 rounded-lg hover:bg-blue-300 transition duration-300 transform hover:scale-110">
+            <img src="assets/sad.png" alt="Sad" class="w-6 h-6 rounded-lg">
+          </div>
+          <p class="text-xs text-center">Sad</p>
+        </div>
+      
+        <!-- React Item 4 -->
+        <div class="flex flex-col items-center mx-1">
+          <div class="bg-green-200 p-1 rounded-lg hover:bg-green-300 transition duration-300 transform hover:scale-110">
+            <img src="assets/stressed.png" alt="Stressed" class="w-6 h-6 rounded-lg">
+          </div>
+          <p class="text-xs text-center">Stressed</p>
+        </div>
+      
+      <!-- Friends' Feelings Section -->
+      <div>
+        <h3 class="text-lg font-semibold text-blue-800 mb-4">Today, your friends are feeling:</h3>
+        <div class="grid grid-cols-3 gap-4">
+
+          <div class="flex flex-col items-center bg-[#3971FF7D]  " style="border-radius: 10%; width: 80px;">
+            <p class="text-sm text-gray-700">John</p>
+
+            <img src="assets/sad.png" alt="Emotion" class="w-10 h-10 rounded-full">
+          </div>
+          <div class="flex flex-col items-center bg-[#FF46397D]" style="border-radius: 10%; width: 80px;">
+
+            <p class="text-sm text-gray-700">John</p>
+
+            <img src="assets/angry.png" alt="Emotion" class="w-10 h-10 rounded-full">
+          </div>
+          <div class="flex flex-col items-center bg-[#F4A84CA1]  " style="border-radius: 10%; width: 80px;">
+            <p class="text-sm text-gray-700">John</p>
+
+            <img src="assets/anxious.png" alt="Emotion" class="w-10 h-10 rounded-full">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+  
       </main>
     </div>
+
+
   </body>
 </html>
