@@ -7,6 +7,7 @@
     font-family: "Work Sans", system-ui, sans-serif;
     height: 100%;
     overflow: hidden;
+    font-size: calc(15px + 0.390625vw);
   }
   body {
     height: 100%;
@@ -15,7 +16,7 @@
 }
 
 .nav-li {
-  @apply text-figma-blue font-medium flex text-xl items-center gap-7 mb-4;
+  @apply text-figma-blue font-medium flex text-base items-center gap-7 mb-3;
 }
 
 .absolute-center {
