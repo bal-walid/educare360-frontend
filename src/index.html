@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- les graphes -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body class="w-screen h-screen bg-gray-300">
     <div class="w-full h-full flex">
@@ -171,16 +173,214 @@
           </li>
         </ul>
       </nav>
-      <!-- HERO -->
+      <!-- HERO desktop-->
       <main class="flex-1 bg-[#FFE4BC]">
 
         <div>
-          <div class="font-bold px-10 py-10 text-xl">
+          
+          <div class="flex justify-between">
+          <div class="font-bold px-10 py-4 text-xl">
           <h1> Feeling anxious ? </h1>
           <p>Try <span class="text-[#BE1C0A]">this</span> out!</p>
          </div>
+         <div class="flex justify-center items-center font-semibold mr-10">
+          <a class="text-white rounded-lg px-3 py-1 bg-[rgb(239,113,63)] shadow-xl" href=""> Take today's assessment</a>
+          
+          <div class="w-[50px] ">
+            <img src="./assets/anxiety-removebg-preview.png"  alt="">
+          </div>
+         </div> 
+
         </div>
+       
+         <div class="  bg-white rounded-md shadow-md px-10 py-2 mr-10 ml-10">
+          
+          <p class="text-[#BE1C0A] font-bold ">Mood History</p>
+          <div class=" mt-4 flex justify-between">
+            <div class="text-center font-semibold text-xs text-[#61646B]  ">
+              <div class="character-container-full bg-[#3971FF7D] ">
+                <img class="w-[50px] " src="./assets/sad.png" alt="">
+              </div>
+              <p class="pt-4">Mon</p>
+              </div>
+
+          <div class="text-center font-semibold text-xs text-[#61646B]  ">
+          <div class="character-container-full bg-[#FF46397D]">
+            <img class="w-[50px] " src="./assets/angry.png" alt="">
+          </div>
+          <p class="pt-4">Tue</p>
+          </div>
+
+          <div class="text-center font-semibold text-xs text-[#61646B] ">
+          <div class="character-container-full bg-[rgba(57,113,255,0.49)]">
+            <img class="w-[50px] " src="./assets/sad.png" alt="">
+          </div>
+          <p class="pt-4">Wed</p>
+          </div>
+
+          <div class="text-center font-semibold text-xs text-[#61646B]  ">
+            <div class="character-container-full bg-[#F4A84CA1]">
+              <img class="w-[50px] " src="./assets/anxious.png" alt="">
+            </div>
+            <p class="pt-4">Thu</p>
+          </div>
+
+
+          <div class="text-center font-semibold text-xs text-[#61646B]  ">
+          <div class="character-container-full bg-[#F4F3AC]">
+            <img class="w-[50px] " src="./assets/happy.png" alt="">
+          </div>
+          <p class="pt-4">Fri</p>
+        </div>
+
+          <div class="text-center font-semibold text-xs text-[#61646B]  ">
+            <div class="character-container-full bg-[#F4A84CA1]">
+              <img class="w-[50px] " src="./assets/anxious.png" alt="">
+            </div>
+            <p class="pt-4">Sat</p>
+          </div>
+
+          <div class="text-center font-semibold text-xs text-[#61646B]  ">
+          <div class="character-container-full bg-[#F4A84CA1]">
+            <img class="w-[50px] " src="./assets/anxious.png" alt="">
+          </div>
+          <p class="pt-4">Sun</p>
+        </div>
+
+        </div>
+        
+        </div>
+        <!-- les graphes -->
+        
+
+        <div class=" flex justify-between mt-8 mb-4 ">
+
+          
+          <div class="w-[50%]  bg-white rounded-md shadow-md px-4 py-2 mr-10 ml-10">
+            <p class="text-[#BE1C0A] font-bold mb-6">How you slept this week</p>
+            <canvas id="sleep" class="   " ></canvas>
+          </div>
+          <div class="w-[50%]  bg-white rounded-md shadow-md px-4 py-2 mr-10 ml-10">
+            <p class="text-[#BE1C0A] font-bold mb-6 ">Hours studied this week</p>
+            <canvas id="study"  class="  "></canvas>
+          </div>
+        </div>
+
+
+         </div>
+        
       </main>
     </div>
+    <script>
+      //graphe sleep
+      // Créer un contexte pour le graphique
+const ctx = document.getElementById('sleep').getContext('2d');
+
+// Dégradé de couleur pour le fond
+const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, 'rgba(239,113,63, 0.4)');   // Couleur orange clair
+gradient.addColorStop(1, 'rgba(239,113,63, 0)');     // Couleur transparente
+
+// Configuration du graphique
+const config = {
+    type: 'line',
+    data: {
+        labels: ['M','T', 'W', 'T', 'F', 'S', 'S'],  // Labels des jours
+        datasets: [{
+            label: 'Hours',
+            data: [8, 7, 9, 5, 6, 8, 4,9],  // Données pour chaque jour
+            fill: true,
+            backgroundColor: gradient,
+            borderColor: 'rgba(255, 99, 71, 0.8)',
+            borderWidth: 2,
+            tension: 0.4,  // Pour les courbes lissées
+            pointBackgroundColor: 'rgba(255, 99, 71, 0.8)',  
+            pointBorderColor: 'rgba(255, 99, 71, 0.8)',
+            pointHoverRadius: 8,
+            pointRadius: function(context) {
+                // Mettre en évidence un point particulier (par exemple, le jour "S")
+                return context.dataIndex === 4 ? 6 : 0;
+            },
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false,  // Cacher la légende
+            }
+        },
+        scales: {
+            x: {
+                grid: {
+                    display: false,  // Cacher les lignes de la grille
+                },
+                ticks: {
+                    color: '#888',  // Couleur des labels en bas
+                }
+            },
+            y: {
+                display: false,  // Cacher l'axe y
+            }
+        },
+        elements: {
+            line: {
+                borderCapStyle: 'round'  // Coins arrondis
+            }
+        }
+    }
+};
+
+// Créer le graphique
+const myChart = new Chart(ctx, config);
+
+// Graphe study
+// Graphe study
+// Graphe study
+const ctx1 = document.getElementById('study').getContext('2d');
+
+const study = new Chart(ctx1, {
+    type: 'bar',  
+    data: {
+        labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'], 
+        datasets: [{
+            label: 'Hours',
+            data: [12, 19, 3, 5, 2, 3, 8],  
+            backgroundColor: '#003059',
+            borderColor: '#003059',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false  // Cacher la légende
+            },
+            tooltip: {
+                enabled: false  // Désactiver les info-bulles
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: '#888',  
+                }
+            },
+            y: {
+                beginAtZero: true,
+                display: false  // Masquer l'axe Y
+            }
+        },
+        elements: {
+            bar: {
+                borderRadius: 10, 
+            }
+        },
+       
+    }
+});
+
+
+
+     </script>
   </body>
 </html>
