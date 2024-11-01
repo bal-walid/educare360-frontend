@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="questions-1.js"></script>
   </head>
   <body class="w-screen h-screen bg-gray-300">
     <div class="w-full h-full flex">
@@ -169,12 +170,14 @@
         </ul>
       </nav>
       <main class="flex-1">
-        <div class="grid items-center justify-items-center grid-cols-[1fr_28px_1fr]">
+        <div class="pt-4 grid items-center justify-items-center grid-cols-[1fr_28px_1fr]">
           <div class="sleep-info">
             <h4>Excellent</h4>
             <p>7-8 hours</p>
           </div>
-          <div class="sliding-part rounded-t-xl"></div>
+          <div data-id="4" data-quality="excellent" class="sliding-part rounded-t-xl">
+            <div class="circle"></div>
+          </div>
           <div class="character-container bg-[#F4F3AC]">
             <img src="./assets/happy.png" alt="">
           </div>
@@ -183,7 +186,9 @@
             <h4>Good</h4>
             <p>6-7 hours</p>
           </div>
-          <div class="sliding-part"></div>
+          <div data-id="3" data-quality="good" class="sliding-part ">
+            <div class="circle"></div>
+          </div>
           <div class="character-container bg-[#08095999]">
             <img src="./assets/bored.png" alt="">
           </div>
@@ -192,7 +197,9 @@
             <h4>Fair</h4>
             <p>5 hours</p>
           </div>
-          <div class="sliding-part"></div>
+          <div data-id="2" data-quality="fair" class="sliding-part">
+            <div class="circle"></div>
+          </div>
           <div class="character-container bg-[#3971FF7D]">
             <img src="./assets/sad.png" alt="">
           </div>
@@ -201,7 +208,9 @@
             <h4>Poor</h4>
             <p>3-4 hours</p>
           </div>
-          <div class="sliding-part"></div>
+          <div data-id="1" data-quality="poor" class="sliding-part">
+            <div class="circle"></div>
+          </div>
           <div class="character-container bg-[#F4A84CA1]">
             <img src="./assets/anxious.png" alt="">
           </div>
@@ -210,7 +219,9 @@
             <h4>Terrible</h4>
             <p>&lt 3 hours</p>
           </div>
-          <div class="sliding-part rounded-b-xl"></div>
+          <div data-id="0" data-quality="terrible" class="sliding-part rounded-b-xl">
+            <div class="circle"></div>
+          </div>
           <div class="character-container bg-[#FF46397D]">
             <img src="./assets/angry.png" alt="">
           </div>
