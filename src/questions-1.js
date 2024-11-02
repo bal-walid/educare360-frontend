@@ -1,14 +1,14 @@
 const barBackgrounds = {
-  'excellent': 'yellow',
-  'good': 'purple',
-  'fair': 'blue',
-  'poor': 'orange',
-  'terrible': 'red'
+  'excellent': '#F4F3AC',
+  'good': '#524C84',
+  'fair': '#3971FF',
+  'poor': '#F4A84C',
+  'terrible': '#FF4639'
 };
 
 const mainBackgrounds = {
   'excellent': 'lightyellow',
-  'good': '#edc4ed',
+  'good': '#C0B0C4',
   'fair': 'lightblue',
   'poor': '#FFE4BC',
   'terrible': 'lightpink'

@@ -24,27 +24,27 @@
 }
 
 .mobile-nav-active {
-  @apply bg-figma-blue w-20 h-20 rounded-[50%] left-[50%] top-0 -translate-y-1/2 -translate-x-1/2
+  @apply bg-figma-blue w-16 h-16 rounded-[50%] left-[50%] top-0 -translate-y-1/2 -translate-x-1/2
 }
 
 .mobile-nav-active img {
-  @apply w-14 h-14;
+  @apply w-10 h-10;
 }
 
 .mobile-nav-1 {
-  @apply w-10 h-10 rounded-2xl max-[380px]:left-[20%] left-[25%] top-4
+  @apply w-8 h-8 rounded-2xl max-[380px]:left-[20%] left-[25%] top-3
 }
 
 .mobile-nav-2 {
-  @apply w-10 h-10 rounded-2xl max-[380px]:right-[20%] right-[25%]  top-4
+  @apply w-8 h-8 rounded-2xl max-[380px]:right-[20%] right-[25%]  top-3
 }
 
 .mobile-nav-3 {
-  @apply w-10 h-10 rounded-2xl max-[380px]:left-[3%] left-[10%] bottom-2
+  @apply w-8 h-8 rounded-2xl max-[380px]:left-[3%] left-[10%] bottom-1
 }
 
 .mobile-nav-4 {
-  @apply w-10 h-10 rounded-2xl max-[380px]:right-[3%] right-[10%] bottom-2
+  @apply w-8 h-8 rounded-2xl max-[380px]:right-[3%] right-[10%] bottom-1
 }
 
 .tablet-nav-item {
@@ -79,7 +79,7 @@
 }
 
 .sleep-info h4 {
-  @apply text-xl font-semibold w-24
+  @apply text-lg font-semibold w-20
 }
 
 .sleep-info p {
@@ -87,7 +87,7 @@
 }
 
 .faux-gap {
-  @apply h-4 bg-white w-7 col-span-3
+  @apply h-0 bg-white w-7 col-span-3
 }
 
 .circle {
@@ -95,7 +95,7 @@
 }
 
 .character-container {
-  @apply h-20 w-20 rounded-2xl shadow flex justify-center items-end
+  @apply h-16 w-16 rounded-2xl shadow flex justify-center items-end
 }
 
 .character-container-full {
@@ -104,5 +104,5 @@
 
 
 .character-container img {
-
+  @apply h-3/4
 }

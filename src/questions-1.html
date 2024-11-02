@@ -14,10 +14,10 @@
     <script defer src="questions-1.js"></script>
   </head>
   <body class="w-screen h-screen bg-gray-300">
-    <div class="w-full h-full flex">
+    <div class="relative w-full h-full flex">
       <!-- mobile-nav -->
       <nav
-        class="min-[501px]:hidden w-full bg-white h-24 rounded-t-[50%] fixed bottom-0"
+        class="min-[501px]:hidden z-10 w-full bg-white h-16 rounded-t-[50%] fixed bottom-0"
       >
         <div class="absolute mobile-nav-active">
           <a href="#"
@@ -66,7 +66,7 @@
       >
         <a class="tablet-nav-item" href="#"
           ><img
-            class="h-9 w-9 md:h-11 md:w-11"
+            class="h-7 w-7"
             src="./assets//icons/dashboard-active.svg"
             alt=""
           /><span class="text-sm md:text-base text-figma-nav-green"
@@ -75,28 +75,28 @@
         >
         <a class="tablet-nav-item" href="#"
           ><img
-            class="h-9 w-9 md:h-11 md:w-11"
+            class="h-7 w-7"
             src="./assets//icons/articles.svg"
             alt=""
           /><span class="text-sm md:text-base">Articles</span></a
         >
         <a class="tablet-nav-item" href="./programs.html"
           ><img
-            class="h-9 w-9 md:h-11 md:w-11"
+            class="h-7 w-7"
             src="./assets//icons/programs.svg"
             alt=""
           /><span class="text-sm md:text-base">Programs</span></a
         >
         <a class="tablet-nav-item" href="./community.html"
           ><img
-            class="h-9 w-9 md:h-11 md:w-11"
+            class="h-7 w-7"
             src="./assets//icons/community.svg"
             alt=""
           /><span class="text-sm md:text-base">Community</span></a
         >
         <a class="tablet-nav-item" href="./settings.html"
           ><img
-            class="h-9 w-9 md:h-11 md:w-11"
+            class="h-7 w-7"
             src="./assets//icons/settings.svg"
             alt=""
           /><span class="text-sm md:text-base">Settings</span></a
@@ -169,8 +169,16 @@
           </li>
         </ul>
       </nav>
-      <main class="flex-1">
-        <div class="pt-4 grid items-center justify-items-center grid-cols-[1fr_28px_1fr]">
+      <main class="transition-colors flex-1 pb-[calc(6rem)] sm:pb-2 h-full overflow-y-auto">
+        <div class="flex items-center justify-around pt-3">
+          <h2 class="text-figma-nav-green font-semibold text-base">Assessment</h2>
+          <div class="flex items-center gap-4">
+            <span class="border-[1px] border-figma-nav-green text-figma-nav-green font-semibold px-[12px] py-[4px] rounded-[30px] bg-[rgba(255,255,255,0.87)]">1 of 3</span>
+            <div class="bg-figma-blue flex justify-center p-[6px] rounded-full"><img class="h-[20px] w-[20px]" src="./assets/icons/logout-mobile.svg" alt=""></div>
+          </div>
+        </div>
+        <h1 class="text-figma-blue text-lg text-center font-semibold px-4 mt-2">How would you rate your sleep quality?</h1>
+        <div class="pt-3 grid items-center justify-items-center grid-cols-[1fr_28px_1fr]">
           <div class="sleep-info">
             <h4>Excellent</h4>
             <p>7-8 hours</p>
@@ -226,49 +234,6 @@
             <img src="./assets/angry.png" alt="">
           </div>
         </div>
-        <!-- <div class="flex flex-col  items-center mt-12">
-          <div class="sliding-part rounded-t-xl">
-            <div class="character-container"></div>
-            <div class="sleep-info">
-              <h4>Excellent</h4>
-              <p>7-8 hours</p>
-            </div>
-          </div>
-          <div class="faux-gap"></div>
-          <div class="sliding-part">
-            <div class="character-container">
-            </div>
-            <div class="sleep-info">
-              <h4>Good</h4>
-              <p>6-7 hours</p>
-            </div>
-          </div>
-          <div class="faux-gap"></div>
-          <div class="sliding-part">
-            <div class="circle"></div>
-            <div class="character-container"></div>
-            <div class="sleep-info">
-              <h4>Fair</h4>
-              <p>5 hours</p>
-            </div>
-          </div>
-          <div class="faux-gap"></div>
-          <div class="sliding-part">
-            <div class="character-container"></div>
-            <div class="sleep-info">
-              <h4>Poor</h4>
-              <p>3-4 hours</p>
-            </div>
-          </div>
-          <div class="faux-gap"></div>
-          <div class="sliding-part rounded-b-xl">
-            <div class="character-container"></div>
-            <div class="sleep-info">
-              <h4>Terrible</h4>
-              <p>&lt3 hours</p>
-            </div>
-          </div>
-        </div> -->
       </main>
     </div>
   </body>
