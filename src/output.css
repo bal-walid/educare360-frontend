@@ -967,6 +967,14 @@ body {
   width: 100vw;
 }
 
+.w-\[min\(\)\] {
+  width: min();
+}
+
+.w-\[min\(800px\2c 100\%\)\] {
+  width: min(800px,100%);
+}
+
 .min-w-full {
   min-width: 100%;
 }
