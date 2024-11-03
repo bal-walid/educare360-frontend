@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script> 
     
     <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
 
@@ -204,21 +205,29 @@
       </nav>
       <main class="relative transition-colors flex-1 flex flex-col pt-2 pb-[calc(6rem)] h-full overflow-y-auto min-[500px]:pb-[80px]">
         <div class="flex items-center justify-between px-4 pt-3"> 
-          <h2 class="relative text-figma-nav-green font-semibold text-base">
-            <a class="text-[#003059] flex absolute left-0 bottom-full text-sm gap-2" href="question-1.html"><img src="./assets/icons/Back.svg" alt="" class="text-[#003059] w-5 h-5 ">Back</a>
+          <h2 class=" text-figma-nav-green font-semibold text-base fixed mt-8">
+            <a class="text-[#003059] flex absolute left-0 bottom-full text-sm gap-2  z-10" href="question-1.html">
+                <img src="./assets/icons/Back.svg" alt="" class="text-[#003059] w-5 h-5 ">Back
+              </a>
             Assessment
           </h2>
-          <div class="flex items-center gap-4">
-            <span class="border-[1px] border-figma-nav-green text-figma-nav-green font-semibold px-[12px] py-[4px] rounded-[30px] bg-[rgba(255,255,255,0.87)]">2 of 3</span>
-            <div class="bg-figma-blue flex justify-center p-[6px] rounded-full"><img class="h-[20px] w-[20px]" src="./assets/icons/logout-mobile.svg" alt=""></div>
+          <div class=" fixed flex items-center gap-4 right-4 mt-8">
+            <span class="border-[1px] border-figma-nav-green  z-10 text-figma-nav-green font-semibold px-[12px] py-[4px] rounded-[30px] bg-[rgba(255,255,255,0.80)]">2 of 3</span>
+            <div class=" flex justify-center p-[6px] "> 
+              <div class="fixed z-0 w-[96] top-0 right-0"> <img src="./assets/icons/header.svg" alt="" class=""> </div> 
+               <a href="home.html" class="h-[30px] w-[30px] z-10 min-[1000px]:hidden"><img  src="./assets/icons/logout-mobile.svg" alt=""></a> 
+            </div>
           </div>
         </div>
-        <h1 class="text-figma-blue text-lg text-center font-semibold px-4 mt-2 max-[600px]:mt-6">How are you feeling today?</h1>
-        <div class="flex flex-col flex-1 w-[min(800px,100%)] mx-auto items-center justify-center gap-4">
-            <!-- affichege d emotion -->
-            <div id="selectedEmotionDisplay" class="text-center mt-2 flex max-[600px]:items-center max-[600px]:justify-center gap-4">
-              <div class="flex max-[600px]:items-center justify-center"> <p id="emotionText" class="text-lg font-light  text-[#003059]"></p> </div> 
-               <div class="max-[600px]:-ml-10"><img id="emotionImage" class="absolute w-48 mx-auto mt-2 hidden -right-8 top-4 max-[600px]:relative max-[600px]:w-28" /></div> 
+        <h1 class="text-figma-blue text-lg text-center font-semibold px-4 mt-2 max-[600px]:mt-16 ">How are you feeling today?</h1>
+        <div class="flex flex-col flex-1 items-center justify-center gap-4">
+            <!-- affichage d emotion -->
+            <div id="selectedEmotionDisplay" class="text-center mt-2 flex items-center justify-center gap-4 ">
+              <div class="flex max-[600px]:items-center justify-center">
+                 <p id="emotionText" class="text-lg font-light  text-[#003059] max-[600px]:w-24"></p> </div> 
+               <div class="max-[600px]:">
+                <img id="emotionImage" class=" w-48 mx-auto mt-2 hidden  top-4 max-[600px]:relative max-[600px]:w-28" />
+               </div> 
 
               </div>
               
@@ -282,7 +291,7 @@
             
          
         </div>
-        <div class="absolute bottom-[4.5rem] min-[500px]:bottom-[80px] w-full flex px-4 justify-between items-center ">
+        <div class=" bottom-[4.5rem] min-[500px]:bottom-[80px] w-full flex px-4 justify-between items-center ">
           <button class="bg-[#00927C] rounded-full text-white font-medium text-sm py-1 px-6"><a href="question-2.html">Skip</a></button>
           <button class="bg-[#00927C] rounded-full text-white font-medium text-sm py-1 px-6"><a href="question-2.html">Next</a></button>
         </div>
