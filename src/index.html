@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script> 
 
 
   </head>
@@ -178,25 +179,30 @@
       <main class="bg-[#FFE4BC] flex-1 flex flex-col items-center overflow-y-auto ">
 
         <div class="w-full pl-4 pr-4 pb-4">
-         <div class="flex place-items-end justify-end"><div class="bg-figma-blue flex justify-center w-16 p-[6px] rounded-full min-[1000px]:hidden  "><img class="h-[20px] w-[20px]" src="./assets/icons/logout-mobile.svg" alt=""></div> </div> 
+         <div class="flex place-items-end justify-end">
+          <div class=" flex justify-center p-[6px] text-white "> 
+            <div class="fixed w-60 z-0 top-0 right-0"> <img src="./assets/icons/header.svg" alt="" class=""> </div> 
+            <a href="home.html" class="h-[30px] w-[30px] z-10 min-[1000px]:hidden fixed top-4 right-4"><img  src="./assets/icons/logout-mobile.svg" alt=""></a> 
+          </div>
+          </div> 
           <div class="flex justify-between max-[430px]:mb-4">
-          <div class="font-bold  pt-4 text-xl max-[430px]:text-lg text-figma-blue max-[430px]:-mt-8 ">
+          <div class="font-bold  pt-4 text-xl max-[430px]:text-lg text-figma-blue  ">
           <h1 class=" max-[430px]:whitespace-pre" > Feeling anxious ? </h1>
           <p>Try <span class="text-[#BE1C0A]">this</span> out!</p>
          </div>
          <div class="flex justify-center items-center font-semibold max-[430px]:items-end  ">
           
-          <a class="text-white rounded-lg px-3 py-1 bg-[rgb(239,113,63)] shadow-xl 
-          max-[430px]:text-xs  max-[430px]:whitespace-pre  max-[430px]:-ml-8" href=""> Take today's assessment</a>
+          <a class="text-white rounded-lg px-3 py-1 bg-[rgb(239,113,63)] shadow-xl  z-10 
+          max-[430px]:text-xs  max-[430px]:whitespace-pre  max-[430px]:-ml-10" href="question-1.html"> Take today's assessment</a>
         
-          <div class="w-[70px] max-[430px]:hidden ">
+          <div class="w-[70px] max-[430px]:hidden z-10  ">
             <img src="./assets/anxiety-removebg-preview.png"  alt="">
           </div>
          </div> 
 
         </div>
        
-         <div class=" bg-white rounded-md shadow-md px-10 py-2   max-[430px]:px-2">
+         <div class=" bg-white rounded-md shadow-md px-10 py-2   max-[430px]:px-2 ">
           
           <p class="text-[#BE1C0A] font-bold ">Mood History</p>
           <div class=" mt-2 flex justify-between">
