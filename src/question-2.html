@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <style>
+        /* Scale selected emotion */
+        .scale-selected {
+          transform: scale(1.2);
+          transition: transform 0.3s ease;
+        }
+      </style>
+    <script>
+        function selectEmotion(emotion, bgColor, imgSrc, event) {
+  // Remove 'scale-selected' class from all emotion containers
+  document.querySelectorAll('.feeling').forEach(el => {
+    el.classList.remove('scale-selected');
+  });
+
+  // Change background color of the body
+  document.body.style.backgroundColor = bgColor;
+
+  // Update the displayed emotion text
+  const emotionText = document.getElementById("emotionText");
+  emotionText.textContent = `I'm feeling ${emotion} today!!`;
+
+  // Update the displayed emotion image
+  const emotionImage = document.getElementById("emotionImage");
+  emotionImage.src = imgSrc;
+  emotionImage.classList.remove("hidden"); // Show the image
+
+  // Add the 'scale-selected' class to the selected emotion container
+  event.currentTarget.classList.add('scale-selected');
+}
+
+      </script>
+  </head>
+  <body class="w-screen h-screen bg-gray-300">
+    <div class="relative w-full h-full flex">
+      <!-- mobile-nav -->
+      <nav
+        class="min-[501px]:hidden z-10 w-full bg-white h-16 rounded-t-[50%] fixed bottom-0"
+      >
+        <div class="absolute mobile-nav-active">
+          <a href="#"
+            ><img
+              class="absolute-center"
+              src="./assets/icons/home-mobile-active.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="absolute mobile-nav-1">
+          <a href="#"
+            ><img
+              class="absolute-center"
+              src="./assets/icons/articles.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="absolute mobile-nav-2">
+          <a href="programs.html"
+            ><img
+              class="absolute-center"
+              src="./assets/icons/programs.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="absolute mobile-nav-3">
+          <a href="community.html"
+            ><img
+              class="absolute-center"
+              src="./assets/icons/community.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="absolute mobile-nav-4">
+          <a href="settings.html"
+            ><img
+              class="absolute-center"
+              src="./assets/icons/settings.svg"
+              alt=""
+          /></a>
+        </div>
+      </nav>
+      <!-- tablet-nav -->
+      <nav
+        class="max-[501px]:hidden min-[1024px]:hidden bg-white fixed bottom-0 w-full flex justify-evenly py-3"
+      >
+        <a class="tablet-nav-item" href="#"
+          ><img
+            class="h-7 w-7"
+            src="./assets//icons/dashboard-active.svg"
+            alt=""
+          /><span class="text-sm md:text-base text-figma-nav-green"
+            >Dashboard</span
+          ></a
+        >
+        <a class="tablet-nav-item" href="#"
+          ><img
+            class="h-7 w-7"
+            src="./assets//icons/articles.svg"
+            alt=""
+          /><span class="text-sm md:text-base">Articles</span></a
+        >
+        <a class="tablet-nav-item" href="./programs.html"
+          ><img
+            class="h-7 w-7"
+            src="./assets//icons/programs.svg"
+            alt=""
+          /><span class="text-sm md:text-base">Programs</span></a
+        >
+        <a class="tablet-nav-item" href="./community.html"
+          ><img
+            class="h-7 w-7"
+            src="./assets//icons/community.svg"
+            alt=""
+          /><span class="text-sm md:text-base">Community</span></a
+        >
+        <a class="tablet-nav-item" href="./settings.html"
+          ><img
+            class="h-7 w-7"
+            src="./assets//icons/settings.svg"
+            alt=""
+          /><span class="text-sm md:text-base">Settings</span></a
+        >
+      </nav>
+      <!-- desktop-nav -->
+      <nav class="bg-white hidden lg:block w-1/4 overflow-y-auto px-3">
+        <img src="assets/text-logo.png" alt="" />
+        <div
+          class="flex items-center gap-3 justify-center  mt-3"
+        >
+          <img class="hidden xl:block xl:h-10 xl:w-10 " src="assets/avatar.png" alt="" />
+          <div>
+            <p class="text-lg font-medium">Jane Doe</p>
+            <p class="text-md font-medium text-[#61646B]">
+              janedoe@example.com
+            </p>
+          </div>
+        </div>
+        <ul class="w-fit flex flex-col mx-auto mt-8">
+          <li class="nav-li">
+            <img
+              src="./assets/icons/dashboard-active.svg"
+              alt="Dashboard Icon"
+              class="icon"
+            />
+            <a class="text-figma-nav-green underline-custom" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-li">
+            <img
+              src="./assets/icons/articles.svg"
+              alt="Articles Icon"
+              class="icon"
+            />
+            <a href="#">Articles</a>
+          </li>
+          <li class="nav-li">
+            <img
+              src="./assets/icons/programs.svg"
+              alt="Programs Icon"
+              class="icon"
+            />
+            <a href="programs.html">My Programs</a>
+          </li>
+          <li class="nav-li">
+            <img
+              src="./assets/icons/community.svg"
+              alt="Community Icon"
+              class="icon"
+            />
+            <a href="community.html"
+              >Community</a
+            >
+          </li>
+          <li class="nav-li">
+            <img
+              src="./assets/icons/settings.svg"
+              alt="Settings Icon"
+              class="icon"
+            />
+            <a href="settings.html">Settings</a>
+          </li>
+          <li class="nav-li mt-3">
+            <img
+              src="./assets/icons/logout.svg"
+              alt="Settings Icon"
+              class="icon"
+            />
+            <a href="home.html">Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="transition-colors flex-1 pb-[calc(6rem)] sm:pb-2 h-full overflow-y-auto">
+      <div class="flex items-center gap-1 ml-4 mt-4">
+        <img src="./assets/icons/Back.svg" alt="" class="text-[#003059] w-6 ">
+        <a class="text-[#003059] " href="">Back</a> 
+       
+    </div>  
+        <div class="flex items-center justify-around -mt-4 max-[600px]:mt-4">
+          <h2 class="text-figma-nav-green font-semibold text-base ">Assessment</h2>
+          <div class="flex items-center gap-4">
+            <span class="border-[1px] border-figma-nav-green text-figma-nav-green font-semibold px-[12px] py-[4px] rounded-[30px] bg-[rgba(255,255,255,0.87)]">2 of 3</span>
+            <div class="flex place-items-end justify-end"><div class="bg-figma-blue flex justify-center w-16 p-[6px] rounded-full min-[1000px]:hidden  "><img class="h-[20px] w-[20px]" src="./assets/icons/logout-mobile.svg" alt=""></div> </div> 
+          </div>
+        </div>
+        <h1 class="text-figma-blue text-lg text-center font-semibold px-4 mt-2 max-[600px]:mt-6">How are you feeling today?</h1>
+        <div class="flex flex-col items-center justify-center gap-4">
+            <!-- affichege d emotion -->
+            <div id="selectedEmotionDisplay" class="text-center mt-2 flex max-[600px]:items-center max-[600px]:justify-center gap-4">
+              <div class="flex max-[600px]:items-center justify-center"> <p id="emotionText" class="text-lg font-light  text-[#003059]"></p> </div> 
+               <div class="max-[600px]:-ml-10"><img id="emotionImage" class="absolute w-48 mx-auto mt-2 hidden -right-8 top-4 max-[600px]:relative max-[600px]:w-28" /></div> 
+
+              </div>
+              
+             
+            <div class="flex justify-between px-4 w-8/12 max-[600px]:w-10/12 ">
+
+                <div class="feeling text-center text-[#003059] font-sans hover:scale-110 " onclick="selectEmotion('Happy', '#FAFCD7', './assets/joy-45-removebg-preview.png', event)">
+                <div class="character-container bg-[#F4F3AC] h-24 w-20   max-[600px]:w-16 max-[600px]:h-16">
+                    <img src="./assets/joy-removebg-preview.png" alt="" class="h-24">
+                  </div>
+                  <p class="shadow-2xl">Happy</p>
+                </div>
+
+                <div class="feeling text-center text-[#003059] font-sans hover:scale-110 " onclick="selectEmotion('Anxious', '#FFE4BC', './assets/anxiety-q.png', event)">
+                  <div class="character-container bg-[#F4A84CA1]  h-24 w-20   max-[600px]:w-16 max-[600px]:h-16">
+                    <img src="./assets/anxiety-removebg-preview.png" alt="">
+                  </div>
+                  <p class="shadow-2xl">Anxious</p>
+                </div>
+
+                <div class="feeling text-center text-[#003059] font-sans hover:scale-110" onclick="selectEmotion('Angry', '#FCA38A', './assets/anger-removebg-preview.png', event)">
+                  <div class="character-container bg-[#FF46397D] h-24 w-20   max-[600px]:w-16 max-[600px]:h-16">
+                    <img src="./assets/angry-1.png" alt="">
+                  </div>
+                  <p class="shadow-2xl">Angry</p>
+                </div>
+
+            </div>
+            
+            <div class="flex justify-between px-4 w-10/12 z-10  max-[600px]:w-full ">
+                <div class="feeling text-center text-[#003059] font-sans hover:scale-110" onclick="selectEmotion('Sad', '#C0E2FB', './assets/sad-cry.png', event)">
+                <div class="character-container bg-[#3971FF7D] h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
+                    <img src="./assets/sad-removebg-preview.png" alt="">
+                  </div>
+                  <p class="shadow-2xl">Sad</p>
+                </div>
+
+                <div class="feeling text-center text-[#003059] font-sans hover:scale-110" onclick="selectEmotion('Afraid', '#9F86BAA3', './assets/fear.png', event)">
+                  <div class="character-container bg-[#9F86BAA3] h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
+                    <img src="./assets/stress-removebg-preview.png" alt="">
+                  </div>
+                  <p class="shadow-2xl">Afraid</p>
+                </div>
+
+                  <div class="feeling text-center text-[#003059] font-sans hover:scale-110 " onclick="selectEmotion('Bored', '#d0d1f199', './assets/ennui-stand.png', event)">
+                  <div class="character-container bg-[#08095999] h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
+                    <img src="./assets/ennui-removebg-preview.png" alt="">
+                  </div>
+                  <p class="shadow-2xl">Bored</p>
+                </div>
+
+                  <div class="feeling text-center text-[#003059] font-sans hover:scale-110" onclick="selectEmotion('Shy', '#F2E9EC', './assets/shy.png', event)">
+                  <div class="character-container bg-[#EED7DF] h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
+                    <img src="./assets/shy.png" alt="">
+                  </div>
+                  <p class="shadow-2xl">Shy</p>
+                </div>
+
+
+            </div>
+            
+         
+        </div>
+        <div class="flex justify-between items-center mb-2 px-4 mt-2 max-[600px]:mt-6">
+            <button class="bg-[#00927C] rounded-full text-white py-1 px-8">Skip</button>
+            <button class="bg-[#00927C] rounded-full text-white py-1 px-8">Next</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
