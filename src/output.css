@@ -624,12 +624,24 @@ body {
   bottom: 0px;
 }
 
-.left-4 {
-  left: 1rem;
+.bottom-\[4rem\] {
+  bottom: 4rem;
 }
 
-.left-\[100px\] {
-  left: 100px;
+.bottom-\[6rem\] {
+  bottom: 6rem;
+}
+
+.bottom-full {
+  bottom: 100%;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-4 {
+  left: 1rem;
 }
 
 .right-32 {
@@ -648,16 +660,8 @@ body {
   top: 1rem;
 }
 
-.left-\[0\] {
-  left: 0;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.bottom-full {
-  bottom: 100%;
+.bottom-\[4\.5rem\] {
+  bottom: 4.5rem;
 }
 
 .z-10 {
@@ -703,10 +707,6 @@ body {
 
 .-mr-\[5\%\] {
   margin-right: -5%;
-}
-
-.-mt-4 {
-  margin-top: -1rem;
 }
 
 .-mt-6 {
@@ -814,12 +814,12 @@ body {
   height: 9rem;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-5 {
+  height: 1.25rem;
 }
 
-.h-7 {
-  height: 1.75rem;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-9 {
@@ -844,10 +844,6 @@ body {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-5 {
-  height: 1.25rem;
 }
 
 .max-h-9 {
@@ -896,6 +892,10 @@ body {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-6 {
@@ -965,10 +965,6 @@ body {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .min-w-full {
@@ -1078,10 +1074,6 @@ body {
 
 .gap-0 {
   gap: 0px;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .gap-14 {
@@ -2061,10 +2053,6 @@ body {
     margin-left: -2.5rem;
   }
 
-  .max-\[600px\]\:mt-4 {
-    margin-top: 1rem;
-  }
-
   .max-\[600px\]\:mt-6 {
     margin-top: 1.5rem;
   }
@@ -2300,6 +2288,10 @@ body {
 }
 
 @media (min-width: 500px) {
+  .min-\[500px\]\:bottom-\[80px\] {
+    bottom: 80px;
+  }
+
   .min-\[500px\]\:pb-\[80px\] {
     padding-bottom: 80px;
   }
