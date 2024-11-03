@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script defer src="questions-1.js"></script>
+    <script defer src="question-1.js"></script>
   </head>
   <body class="w-screen h-screen bg-gray-300">
     <div class="relative w-full h-full flex">
@@ -170,8 +170,11 @@
         </ul>
       </nav>
       <main class="transition-colors flex-1 flex flex-col justify-center pb-[calc(6rem)] h-full overflow-y-auto min-[500px]:pb-[80px]">
-        <div class="flex items-center justify-around pt-3">
-          <h2 class="text-figma-nav-green font-semibold text-base">Assessment</h2>
+        <div class="flex items-center justify-between px-4 pt-3"> 
+          <h2 class="relative text-figma-nav-green font-semibold text-base">
+            <a class="text-[#003059] flex absolute left-0 bottom-full text-sm gap-2" href=""><img src="./assets/icons/Back.svg" alt="" class="text-[#003059] w-5 h-5 ">Back</a>
+            Assessment
+          </h2>
           <div class="flex items-center gap-4">
             <span class="border-[1px] border-figma-nav-green text-figma-nav-green font-semibold px-[12px] py-[4px] rounded-[30px] bg-[rgba(255,255,255,0.87)]">1 of 3</span>
             <div class="bg-figma-blue flex justify-center p-[6px] rounded-full"><img class="h-[20px] w-[20px]" src="./assets/icons/logout-mobile.svg" alt=""></div>
