@@ -9,8 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
 </head>
-<body class="w-screen h-screen bg-[#ccf0ec]">
-  <div class="">
+<body class="w-screen h-screen bg-[#ccf0ec] flex flex-col">
     <!--nav bar-->
     <!-- version pc-->
     <nav  class='max-[1023px]:hidden bg-transparent -mt-6  max-h-9 fixed top-0 w-screen '>
@@ -74,57 +73,23 @@
 
 <!-- HERO SECTION -->
 
-<main class=" mt-[10%]">
-  <div class="relative   ml-10  w-screen  z-10 max-[770px]:ml-0 ">
-    <div class="container  sm:py-0">
-        <div class="grid grid-cols-1 sm:grid-cols-2 justify-center place-items-center min-h-[300px]  w-screen ">
-        <!-- text-content section -->
-        <div  class='space-y-7 sm:order-1 max-[770px]:ml-10 max-[330px]:ml-0 min-[370px]:ml-0 min-[760px]:ml-10  min-[1400px]:mt-10
-        max-[330px]:order-2 max-[330px]:mt-16'>
-          <div class="max-[330px]:text-center flex items-center justify-center mt-6 max-[330px]:mt-2 min-[370px]:mt-1"> 
-            <h1 class='text-[#00927C]  font-bold text-3xl max-[770px]:text-xl max-[330px]:text-center
-            max-[330px]:w-9/12  max-[330px]:text-lg
-            max-[330px]:text-[#003059] min-[1400px]:text-5xl min-[2500px]:text-7xl'>Take care of your 
+<main class=" relative flex-1 mt-[10%]">
 
-              mental health!</h1></div> 
-            <p  class='text-lg  lg:pr-[60px] text-[#003059] max-[450px]:hidden  max-[640px]:hidden
-             min-[1400px]:text-2xl min-[2500px]:text-4xl '>Empowering students to achieve academic excellence 
-
-              while nurturing mental well-being, fostering a balanced and
-              
-               thriving journey toward personal and professional success.</p>
-             <!-- button section -->
-            <div  class='flex  max-[330px]:flex-col  max-[330px]:gap-4 items-center justify-between gap-[8%] py-3 max-[770px]:py-0 '>
-                
-               <a href="signup.html"  class=' bg-gradient-to-r from-[#003059] from-70% to-[#0067BF] px-[15%]  max-[330px]:px-[25%] py-3  
-               rounded-2xl text-white font-semibold shadow-xl text-center   max-[770px]:text-sm min-[1400px]:text-2xl max-[330px]:text-xs
-               hover:scale-110 text-xl max-[330px]:order-1  min-[2500px]:text-4xl'>
-                 Sign Up</a>
-                
-
-                 <a href="signin.html"  class='bg-gradient-to-r from-[#00927C] from-60%  to-[#7bd3c6]   px-[15%]  py-3  min-[2500px]:py-6 max-[330px]:text-xs
-                 rounded-2xl text-white font-semibold shadow-xl text-center max-[770px]:text-sm  max-[330px]:px-[25%] min-[1400px]:text-2xl
-                 hover:scale-110 text-xl max-[330px]:order-2  min-[2500px]:text-4xl'>
-                 Sign In</a>
-            </div>
-        </div>
-         <!-- image section -->
-        <div  class='order-1 sm:order-2 size-72 min-[900px]:-mt-[28%] -mr-[5%] max-[770px]:size-60 min-[760px]:-mt-16
-        min-[900px]:w-64 min-[370px]:size-60 min-[370px]:mt-2  min-[2500px]:py-6 max-[330px]:-mt-6 
-         max-[770px]:order-2  max-[450px]:mr-0 max-[330px]:order-1  max-[330px]:size-48 min-[1400px]:w-80  
-         min-[2500px]:w-96'>
-            <img src="assets/sadness.png" alt="" />
-            
-
-        </div>
-        </div>
-       
-
-    </div>
-     
- </div>
  <!-- foot desktp-->
-<div class="fixed bottom-0 w-full h-[50%]">
+ <img class="absolute left-1/2 -translate-x-1/2 top-[50%] -translate-y-full w-[225px] h-[337px] z-10" src="./assets/sadness.png" alt="">
+ <div class="flex flex-col items-center w-full absolute top-[52.5%] left-1/2 -translate-x-1/2 z-10">
+   <h1 class="text-figma-blue text-[1.375rem] text-center font-semibold w-2/3">
+    Take care of your mental health!
+   </h1>
+   <div class="flex gap-[8px] mt-[12px]">
+    <div class="rounded-full w-[8px] h-[8px] bg-figma-nav-green"></div>
+    <div class="rounded-full w-[8px] h-[8px] bg-figma-light-green"></div>
+    <div class="rounded-full w-[8px] h-[8px] bg-figma-light-green"></div>
+   </div>
+   <button class="text-white w-[200px] py-[12px] my-[1rem] rounded-[16px] bg-[linear-gradient(87deg,#003059_0%,#0067BF_100%)]">Sign in</button>
+   <button class="text-white w-[200px] py-[12px] rounded-[16px] bg-[linear-gradient(87deg,#00927C_45%,#A2E8D8_100%)]">Sign up</button>
+ </div>
+ <div class="absolute bottom-0 w-full h-[60%]">
   <div class="bg-white h-[30%] rounded-t-[50%]"></div>
   <div class=" bg-white h-[70%]">
 </div>
@@ -140,6 +105,6 @@
 
 
 
-  </div>
+
 </body>
 </html>
