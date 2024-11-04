@@ -951,6 +951,10 @@ body {
   height: 12px;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
 .max-h-9 {
   max-height: 2.25rem;
 }
@@ -2370,6 +2374,14 @@ body {
     height: 15%;
   }
 
+  .lg\:h-1\/2 {
+    height: 50%;
+  }
+
+  .lg\:h-3\/4 {
+    height: 75%;
+  }
+
   .lg\:w-\[400px\] {
     width: 400px;
   }
@@ -2408,6 +2420,10 @@ body {
     justify-content: center;
   }
 
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
   .lg\:justify-around {
     justify-content: space-around;
   }
@@ -2418,6 +2434,10 @@ body {
 
   .lg\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .lg\:self-center {
+    align-self: center;
   }
 
   .lg\:bg-figma-blue {
