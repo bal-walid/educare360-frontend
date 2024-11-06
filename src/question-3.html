@@ -25,27 +25,50 @@
         }
       </style>
     <script>
-        function selectEmotion(emotion, bgColor, imgSrc, event) {
-  // Remove 'scale-selected' class from all emotion containers
-  document.querySelectorAll('.feeling').forEach(el => {
-    el.classList.remove('scale-selected');
-  });
-
-  // Change background color of the body
-  document.body.style.backgroundColor = bgColor;
-
-  // Update the displayed emotion text
-  const emotionText = document.getElementById("emotionText");
-  emotionText.textContent = `I'm feeling ${emotion} today!!`;
-
-  // Update the displayed emotion image
-  const emotionImage = document.getElementById("emotionImage");
-  emotionImage.src = imgSrc;
-  emotionImage.classList.remove("hidden"); // Show the image
-
-  // Add the 'scale-selected' class to the selected emotion container
-  event.currentTarget.classList.add('scale-selected');
-}
+        
+                    let hours = 6;
+                    let minutes = 0;
+                  
+                    function updateTimeDisplay() {
+                      const formattedHours = hours.toString().padStart(2, '0');
+                      const formattedMinutes = minutes.toString().padStart(2, '0');
+                      document.getElementById('hours-display').textContent = formattedHours;
+                      document.getElementById('minutes-display').textContent = formattedMinutes;
+                    }
+                  
+                    function increaseHours() {
+                      hours = (hours + 1) % 24; // Increment hours and wrap around after 23
+                      updateTimeDisplay();
+                    }
+                  
+                    function decreaseHours() {
+                      hours = (hours === 0) ? 23 : hours - 1; // Decrement hours and wrap around after 0
+                      updateTimeDisplay();
+                    }
+                  
+                    function increaseMinutes() {
+                      if (minutes === 59) {
+                        minutes = 0;
+                        increaseHours(); // Roll over to the next hour
+                      } else {
+                        minutes++;
+                      }
+                      updateTimeDisplay();
+                    }
+                  
+                    function decreaseMinutes() {
+                      if (minutes === 0) {
+                        minutes = 59;
+                        decreaseHours(); // Roll back to the previous hour
+                      } else {
+                        minutes--;
+                      }
+                      updateTimeDisplay();
+                    }
+                  
+                    updateTimeDisplay();
+                 
+                  
 
       </script>
   </head>
@@ -205,6 +228,7 @@
           </li>
         </ul>
       </nav>
+      <!-- Hero -->
       <main class="relative bg-[#FAFCD7] transition-colors flex-1 flex flex-col pt-2 h-full overflow-y-auto pb-[calc(6rem)] min-[500px]:pb-[80px] min-[1024px]:pb-[0px]">
         <div class="flex items-center justify-between px-4 pt-3"> 
           <h2 class=" text-figma-nav-green font-semibold text-base fixed mt-8">
@@ -223,11 +247,13 @@
         </div>
 
         <div class="flex flex-col flex-1 items-center justify-center gap-4">
-            <div class="flex justify-between px-4 w-8/12 max-[600px]:w-10/12 ">
-                <div class=" max-[600px]:w-16 max-[600px]:h-16 absolute bottom-0 left-0 mb-4 ml-4"">
-                  <img src="./assets/joy-books.png" alt="" class="h-100 w-60"> 
+            <div class="flex justify-between w-full max-[600px]:w-10/12 ">
+
+              <div class="flex justify-between items-center bg-red-600 mt-10 w-[100%] h-full">
+                <div class="w-[60%]  max-[600px]:w-16 max-[600px]:h-16  mb-4 ">
+                  <img src="./assets/joy-books.png" alt="" class="w-[100%] h-full"> 
                 </div> 
-                  <div class="flex flex-col ml-40">           
+                  <div class="flex flex-col  bg-white h-full items-center gap-4">           
                     <div class="text-center text-[#003059] font-sans">
                       <h1 class="text-figma-blue text-2xl text-center font-semibold px-4 mb-4 mt-2 max-[600px]:mt-16">How many hours did you study today?</h1> 
                     </div>                 
@@ -271,51 +297,9 @@
                       No judgment here, this is <br> only for personal statistics!
                     </p>
                   </div>
+                </div>
                   
-                  <script>
-                    let hours = 6;
-                    let minutes = 0;
-                  
-                    function updateTimeDisplay() {
-                      const formattedHours = hours.toString().padStart(2, '0');
-                      const formattedMinutes = minutes.toString().padStart(2, '0');
-                      document.getElementById('hours-display').textContent = formattedHours;
-                      document.getElementById('minutes-display').textContent = formattedMinutes;
-                    }
-                  
-                    function increaseHours() {
-                      hours = (hours + 1) % 24; // Increment hours and wrap around after 23
-                      updateTimeDisplay();
-                    }
-                  
-                    function decreaseHours() {
-                      hours = (hours === 0) ? 23 : hours - 1; // Decrement hours and wrap around after 0
-                      updateTimeDisplay();
-                    }
-                  
-                    function increaseMinutes() {
-                      if (minutes === 59) {
-                        minutes = 0;
-                        increaseHours(); // Roll over to the next hour
-                      } else {
-                        minutes++;
-                      }
-                      updateTimeDisplay();
-                    }
-                  
-                    function decreaseMinutes() {
-                      if (minutes === 0) {
-                        minutes = 59;
-                        decreaseHours(); // Roll back to the previous hour
-                      } else {
-                        minutes--;
-                      }
-                      updateTimeDisplay();
-                    }
-                  
-                    updateTimeDisplay();
-                  </script>
-                  
+                 
             </div>
             <div class="bottom-[4.5rem] min-[500px]:bottom-[80px] w-full flex px-4 justify-center items-center gap-4">
               <button class="bg-[#00927C] rounded-full text-white font-medium text-sm py-1 px-8 ml-40">
