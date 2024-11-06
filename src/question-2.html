@@ -45,7 +45,7 @@
 
       </script>
   </head>
-  <body class="w-screen h-screen bg-gray-300">
+  <body class="w-screen h-screen bg-[#FAFCD7]">
     <div class="relative w-full h-full flex">
       <!-- mobile-nav -->
       <nav
@@ -222,9 +222,9 @@
             <!-- affichage d emotion -->
             <div id="selectedEmotionDisplay" class="text-center mt-2 flex items-center justify-center gap-4 ">
               <div class="flex max-[600px]:items-center justify-center">
-                 <p id="emotionText" class="text-lg font-light min-[1000px]:text-xl text-[#003059] max-[600px]:w-24"></p> </div> 
+                 <p id="emotionText" class="text-lg font-light min-[1000px]:text-xl text-[#003059] max-[600px]:w-24">I'm feeling Happy today!!</p> </div> 
                <div class="max-[600px]:">
-                <img id="emotionImage" class=" w-[100px] h-[100px] mx-auto mt-2 hidden  top-4 max-[600px]:relative min-[601px]:w-[120px] min-[601px]:h-[150px]" />
+                <img id="emotionImage" src="assets/joy-45-removebg-preview.png" class=" w-[100px] h-[100px] mx-auto mt-2  top-4 max-[600px]:relative min-[601px]:w-[120px] min-[601px]:h-[150px]" />
                </div> 
 
               </div>
@@ -232,7 +232,7 @@
              
             <div class="flex  justify-between px-4 w-8/12 max-[600px]:w-10/12 ">
 
-                <div class="feeling text-center text-[#003059] font-sans hover:scale-110 " onclick="selectEmotion('Happy', '#FAFCD7', './assets/joy-45-removebg-preview.png', event)">
+                <div class="feeling text-center text-[#003059] font-sans hover:scale-110  scale-selected" onclick="selectEmotion('Happy', '#FAFCD7', './assets/joy-45-removebg-preview.png', event)">
                 <div class="character-container bg-[#F4F3AC] h-24 w-20   max-[600px]:w-16 max-[600px]:h-16">
                     <img src="./assets/joy-removebg-preview.png" alt="" class="h-24">
                   </div>
