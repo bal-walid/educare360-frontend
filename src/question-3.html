@@ -249,20 +249,21 @@
         <div class="flex flex-col flex-1 items-center justify-center gap-4">
             <div class="flex justify-between w-full max-[600px]:w-10/12 ">
 
-              <div class="flex justify-between items-center bg-red-600 mt-10 w-[100%] h-full">
-                <div class="w-[60%]  max-[600px]:w-16 max-[600px]:h-16  mb-4 ">
+              <div class="flex justify-center items-center mt-10 w-[100%] ">
+                <div class="w-[40%]  max-[600px]:w-16 max-[600px]:h-16  -mt-16 ">
                   <img src="./assets/joy-books.png" alt="" class="w-[100%] h-full"> 
                 </div> 
-                  <div class="flex flex-col  bg-white h-full items-center gap-4">           
+                  <div class=" w-[50%] flex flex-col   items-center gap-4">           
                     <div class="text-center text-[#003059] font-sans">
-                      <h1 class="text-figma-blue text-2xl text-center font-semibold px-4 mb-4 mt-2 max-[600px]:mt-16">How many hours did you study today?</h1> 
+                      <h1 class="text-figma-blue text-2xl text-center
+                       font-semibold px-4 mb-4 mt-2 max-[600px]:mt-16">How many hours did you study today?</h1> 
                     </div>                 
                   
                     <div class="text-center text-[#003059] font-sans justify-center">
                       <div class="h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
                         <div class="flex flex-col items-center">
                           <!-- Time Input -->
-                          <div class="relative inline-flex items-center justify-center bg-white border border-gray-300 rounded-lg p-4 text-2xl font-semibold text-gray-800 w-40 h-24 ml-60">
+                          <div class="relative inline-flex items-center justify-center bg-white border border-gray-300 rounded-lg p-4 text-2xl font-semibold text-gray-800 w-40 h-24 ">
                             <div class="flex flex-row items-center ">
                               <div class="flex flex-col items-center mx-2 ">
                                 <button onclick="increaseHours()" class="text-figma-blue text-sm">
@@ -289,26 +290,27 @@
                             </div>
                           </div>
                           
-                          <span class="text-lg font-medium text-figma-blue mt-2 mb-2 ml-60">Hours</span>
+                          <span class="text-lg font-medium text-figma-blue mt-2 mb-2 ">Hours</span>
                         </div>
                       </div>
                     </div>
-                    <p class="text-xl text-figma-blue mt-10 text-center">
-                      No judgment here, this is <br> only for personal statistics!
+                    <p class="text-xl text-figma-blue mt-10 text-center font-light">
+                      No judgment here, this is  only for personal statistics!
                     </p>
+                    <div class="bottom-[4.5rem]  w-full flex  justify-between items-center px-14 mt-6  ">
+              <button class="bg-[#00927C] rounded-full text-white font-medium text-sm py-1 px-6 ">
+                <a href="index.html">Skip</a>
+              </button>
+              <button class="bg-[#003059] rounded-full text-white font-medium text-sm py-1 px-6">
+                <a href="index.html">Finish</a>
+              </button>
+            </div>
                   </div>
                 </div>
                   
                  
             </div>
-            <div class="bottom-[4.5rem] min-[500px]:bottom-[80px] w-full flex px-4 justify-center items-center gap-4">
-              <button class="bg-[#00927C] rounded-full text-white font-medium text-sm py-1 px-8 ml-40">
-                <a href="index.html">Skip</a>
-              </button>
-              <button class="bg-[#003059] rounded-full text-white font-medium text-sm py-1 px-6">
-                <a href="index.html">Submit</a>
-              </button>
-            </div>
+            
         </div>
 
           
