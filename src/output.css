@@ -722,6 +722,11 @@ body {
   margin-bottom: 0.25rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-\[1rem\] {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -899,6 +904,10 @@ body {
   height: 2.25rem;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .h-\[10vh\] {
   height: 10vh;
 }
@@ -1037,6 +1046,10 @@ body {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[12px\] {
@@ -1852,8 +1865,8 @@ body {
   display: flex;
   align-items: center;
   gap: 1.75rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(0 48 89 / var(--tw-text-opacity));
@@ -2150,10 +2163,6 @@ body {
     width: 6rem;
   }
 
-  .max-\[600px\]\:w-28 {
-    width: 7rem;
-  }
-
   .max-\[600px\]\:w-full {
     width: 100%;
   }
@@ -2268,6 +2277,16 @@ body {
 @media (min-width: 501px) {
   .min-\[501px\]\:hidden {
     display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .min-\[601px\]\:h-\[150px\] {
+    height: 150px;
+  }
+
+  .min-\[601px\]\:w-\[120px\] {
+    width: 120px;
   }
 }
 
@@ -2423,6 +2442,10 @@ body {
 
   .min-\[1024px\]\:hidden {
     display: none;
+  }
+
+  .min-\[1024px\]\:pb-2 {
+    padding-bottom: 0.5rem;
   }
 
   .min-\[1024px\]\:pb-\[0px\] {
