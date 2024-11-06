@@ -1,3 +1,121 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body class="w-screen h-screen bg-[#ccf0ec]">
+    <div class="">
+        <!--nav bar-->
+        <!-- version pc-->
+        <nav  class='max-[1023px]:hidden bg-transparent -mt-6  max-h-9 fixed top-0 w-screen '>
+            <div class="container flex justify-between py-5 sm:py-6 min-w-full " > 
+            <!--logo section-->
+                      <div> 
+                     <a target="_blank" href="#"><img class='  hover:scale-105' src="assets/text-logo.png" alt="" /></a>   
+                      </div>
+            <!--link section-->
+                <div class='container flex justify-end gap-6 py-5 sm:py-6  px-20'>
+                    
+                            <ul class='flex  gap-2 text-xs  font-semibold '>
+    
+                              <li class=' '> 
+                                <button  class=' text-[#003059] hover:scale-105  py-2 px-4' >
+                                Features</button></li>
+                                      
+                                <li class=' '> 
+                                  <button  class=' text-[#003059] hover:scale-105  py-2 px-4' >
+                                  About </button></li>
+    
+                                  <li class=' '> 
+                                    <button  class=' text-[#003059] hover:scale-105  py-2 px-4' >
+                                    Support </button></li>
+                                </ul>
+    
+                                <ul class='flex  gap-2 text-xs  font-semibold '>
+    
+                                  <li class=' '> 
+                                        <a href="signin.html" class=' text-[#00927C]  hover:scale-125 py-2 px-4' >
+                                          Log in </a></li>
+                                          
+                                    <li class=' '> 
+                                      <a href="signup.html"  class=' border-1 border-white shadow-xl
+                                       bg-[#003059] text-white py-2 px-4 rounded-md
+                                       hover:text-[#003059] hover:bg-white hover:border-[#003059] ' >
+                                      Sign up </a></li>
+                                    </ul>       
+                </div>
+                </div>
+        </nav>
+    
+    
+         <!-- version tablette-->
+         <nav  class=' max-[501px]:hidden min-[1024px]:hidden bg-transparent  max-h-9'>
+          <div class="container flex justify-center items-center py-5 sm:py-6 min-w-full " > 
+          <!--logo section-->
+                    <div> 
+                   <a  target="_blank" href="#"><img class='w-60  hover:scale-105' src="assets/text-logo.png" alt="" /></a>   
+                    </div>
+          <!--link section-->
+             
+              </div>
+      </nav>
+    
+    
+      <!-- version mobile-->
+      <nav  class=' min-[501px]:hidden bg-transparent  max-h-9'>
+       
+    </nav>
+
+    <div class="h-screen flex items-center justify-center mt-2 p-2">
+      <div class="relative flex flex-col items-center bg-white rounded-xl shadow-md w-[85vw] max-w-3xl max-h-[80vh] mx-auto">
+    
+        <!-- Image on the right (responsive) -->
+        <div class="hidden sm:block absolute right-[-3rem] top-20 sm:top-48  md:top-48  lg:right-[-3rem] lg:top-16">
+          <img src="assets/joy&sadness.png" alt="JOY Sadness" class="w-40 h-auto lg:w-60" />
+        </div>
+        <!-- Logo centered at the top -->
+        <div class="flex justify-center items-center ">
+          <img src="assets/logo.png" alt="Logo" class="w-[35%] sm:w-[35%] md:w-[40%] lg:w-[35%] h-auto">
+        </div>
+        <!-- Sign In / Sign Up buttons -->
+        <div class="flex justify-center mb-2 -mt-6 ">
+          <a href="signin.html" class="w-[2%] sm:w-[10%] md:w-[25%] lg:w-[45%] px-16  border border-[#61646B] text-center rounded-l-full text-xs md:text-xs lg:text-xs">Sign In</a>
+          <a href="signup.html" class="w-[2%] sm:w-[10%] md:w-[25%] lg:w-[45%] px-16  bg-[#0B2545] text-white text-center rounded-r-full text-xs md:text-xs lg:text-xs">Sign Up</a>
+        </div>
+        <!-- Form -->
+        <form action="#" class=" space-y-2 w-full">
+          <div class="flex justify-center">
+            <input type="text" placeholder="Nom" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] p-2 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
+          </div>
+          <div class="flex justify-center">
+            <input type="text" placeholder="Prénom" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] p-2 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
+          </div>
+          <div class="flex justify-center">
+            <input type="text" placeholder="Email" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] p-2 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
+          </div>
+          <div class="flex justify-center">
+            <input type="password" placeholder="Mot de passe" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] p-2 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
+          </div>
+          <div class="flex justify-center items-center ">
+            <button type="submit" class="mb-6 w-[25%] sm:w-[20%] md:w-[20%] lg:w-[20%]  bg-gradient-to-r from-[#0B2545] to-[#155E75] text-white py-2 rounded-lg text-xs hover:opacity-90">
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  
+
+</body>
+=======
 <!doctype html>
 <html>
 <head>
@@ -138,4 +256,5 @@ Sign up      </button>    </div>
   
 
 </body>
+>>>>>>> 2c3dee761d25243adb0564084ebc311482425cef
 </html>
