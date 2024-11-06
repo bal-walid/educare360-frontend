@@ -16,8 +16,10 @@
 }
 
 .nav-li {
-  @apply text-figma-blue font-medium flex text-base items-center gap-7 mb-3;
+  @apply text-figma-blue font-medium flex text-sm items-center gap-7 mb-3;
 }
+
+
 
 .absolute-center {
   @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
@@ -67,7 +69,7 @@
 }
 
 .sliding-part {
-  @apply bg-white h-20 w-7 relative
+  @apply bg-white h-20 w-7 relative [@media(max-height:620px)]:h-16
 }
 
 .sliding-part.active .circle {
@@ -79,7 +81,7 @@
 }
 
 .sleep-info h4 {
-  @apply text-lg font-semibold w-20
+  @apply text-lg font-semibold w-20 [@media(max-height:560px)]:text-base
 }
 
 .sleep-info p {
@@ -91,11 +93,11 @@
 }
 
 .circle {
-  @apply absolute top-0 left-1/2 -translate-x-1/2  w-16 h-16 rounded-full shadow-xl hidden;
+  @apply absolute top-0 left-1/2 -translate-x-1/2  w-16 h-16 rounded-full shadow-xl hidden [@media(max-height:620px)]:h-12 [@media(max-height:620px)]:w-12;
 }
 
 .character-container {
-  @apply h-16 w-16 rounded-2xl shadow flex justify-center items-end
+  @apply h-16 w-16 rounded-2xl shadow flex justify-center items-end [@media(max-height:620px)]:h-12 [@media(max-height:620px)]:w-12
 }
 
 .character-container-full {
