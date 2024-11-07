@@ -55,7 +55,7 @@
     
     
          <!-- version tablette-->
-         <nav  class=' max-[501px]:hidden min-[1024px]:hidden bg-transparent max-h-9'>
+         <nav  class=' max-[630px]:hidden min-[1024px]:hidden bg-transparent max-h-9'>
           <div class="container flex justify-center items-center py-5 sm:py-6 min-w-full " > 
           <!--logo section-->
                     <div> 
@@ -70,48 +70,56 @@
        
     </nav>
 
-    <div class="h-screen flex items-center justify-center sm:mt-2 md:mt-3 lg:mt-4 p-2">
-      <div class="relative flex flex-col items-center bg-white rounded-xl shadow-md xs:h-[90%] sm:w-[60%] sm:h-[80%] md:h-[82%] w-[80%] lg:h-[85%] w-[85vw] max-w-3xl  mx-auto">
-    
+    <main class=" h-screen flex items-center justify-center sm:mt-2 md:mt-3 lg:mt-4 p-2">
+      <div class="relative flex flex-col items-center bg-white rounded-xl shadow-md xs:h-[90%]  h-full 
+      gap-2 min-[1000px]:gap-6 
+      sm:w-[60%] sm:h-[80%] md:h-[82%] w-[80%] lg:h-[85%]  max-w-3xl  mx-auto max-[500px]:gap-6">
+      
         <!-- Image on the right (responsive) -->
-        <div class="hidden sm:block absolute right-[-3rem] top-20 sm:top-48  md:top-40  lg:right-[-4rem] lg:top-10">
-          <img src="assets/joy&sadness.png" alt="JOY Sadness" class="w-40 h-auto lg:w-60" />
+        <div class="absolute -right-28 top-20  max-[900px]:hidden">
+          <img src="assets/joy&sadness.png" alt="JOY Sadness" class="w-60 h-auto lg:w-60" />
         </div>
         <!-- Logo centered at the top -->
-        <div class="flex justify-center items-center sm:-mt-10 lg:-mt-5 ">
-          <img src="assets/logo.png" alt="Logo" class="w-[35%] sm:w-[35%] md:w-[40%] lg:w-[35%] h-auto">
+        <div class="flex justify-center items-center max-[500px]:-mt-16  min-[1000px]:-mt-8 
+        max-[500px]:-mb-16  max-[500px]:order-2  -mt-10  -mb-6 min-[2000px]:mt-14  ">
+          <img src="assets/logo.png" alt="Logo" class="w-[250px] max-[500px]:w-[300px] min-[320px]:w-[200px] min-[2000px]:w-[400px] ">
         </div>
         <!-- Sign In / Sign Up buttons -->
-        <div class="flex justify-center mb-2 -mt-6 ">
-          <a href="signin.html" class="min-w-[80px] sm:min-w-[100px] md:min-w-[120px] lg:min-w-[140px] px-4 border border-[#61646B] text-center rounded-l-full text-xs md:text-xs lg:text-xs">
+        <div class="flex justify-center  mb-2 -mt-6 max-[500px]:order-1 max-[500px]:w-full max-[500px]:mt-10">
+          <a href="signin.html" class=" py-2  max-[500px]:px-8
+          px-8 border border-[#61646B] text-center rounded-l-full text-xs md:text-xs lg:text-xs">
             Sign In
           </a>
-          <a href="signup.html" class="min-w-[80px] sm:min-w-[100px] md:min-w-[120px] lg:min-w-[140px] px-4 bg-[#0B2545] text-white text-center rounded-r-full text-xs md:text-xs lg:text-xs">
+          <a href="signup.html" class=" py-2 max-[500px]:px-8
+           px-8 bg-[#0B2545] text-white text-center rounded-r-full text-xs md:text-xs lg:text-xs">
             Sign Up
           </a>
         </div>
         
         <!-- Form -->
-        <form action="#" class=" space-y-2 w-full">
+        <form action="#" class=" space-y-2 w-full max-[500px]:order-3">
           <div class="flex justify-center">
-            <input type="text" placeholder="Nom" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] p-2 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
+            <input type="text" placeholder="Nom" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] px-2 py-1 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
           </div>
           <div class="flex justify-center">
-            <input type="text" placeholder="Prénom" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] p-2 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
+            <input type="text" placeholder="Prénom" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] px-2 py-1  border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
           </div>
           <div class="flex justify-center">
-            <input type="text" placeholder="Email" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] p-2 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
+            <input type="text" placeholder="Email" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] px-2 py-1  border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
           </div>
           <div class="flex justify-center">
-            <input type="password" placeholder="Mot de passe" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] p-2 border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
+            <input type="password" placeholder="Mot de passe" class="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] px-2 py-1  border border-[#00927C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00927C]" />
           </div>
           <div class="flex justify-center items-center ">
-            <button type="submit" class="w-[25%] sm:w-[20%] mb-2 md:w-[20%] mb-2 lg:w-[20%]  bg-gradient-to-r from-[#0B2545] to-[#155E75] text-white py-2 rounded-lg text-xs hover:opacity-90">
-              Sign Up
-            </button>
+            <a href="index.html" class="  px-14 py-2 max-[500px]:w-full mx-2 text-center mt-2
+            bg-gradient-to-r from-[#0B2545] to-[#155E75] text-white rounded-lg text-xs hover:opacity-90">
+              
+             Sign Up
+             </a> 
           </div>
         </form>
       </div>
-    </div>
+    
+    </main>
 </body>    
 </html>
