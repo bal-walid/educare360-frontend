@@ -220,68 +220,70 @@
         <h1 class="text-figma-blue text-lg text-center font-semibold px-4 mt-2 max-[600px]:mt-16 ">How are you feeling today?</h1>
         <div class="flex flex-col flex-1 items-center justify-center gap-4">
             <!-- affichage d emotion -->
-            <div id="selectedEmotionDisplay" class="text-center mt-2 flex items-center justify-center gap-4 ">
+            <div id="selectedEmotionDisplay" class="text-center mt-2 flex items-center justify-center gap-4 max-[600px]:mt-2  max-[600px]:h-24 ">
               <div class="flex max-[600px]:items-center justify-center ">
                  <p id="emotionText" class="text-lg font-light min-[1000px]:text-xl text-[#003059] max-[600px]:w-24">I'm feeling Happy today!!</p> </div> 
                <div class="max-[600px]:-mt-14">
-                <img id="emotionImage" src="assets/joy-45-removebg-preview.png" class=" w-[100px] h-[100px] mx-auto mt-2  top-4 max-[600px]:relative min-[601px]:w-[120px] min-[601px]:h-[150px]" />
+                <img id="emotionImage" src="assets/joy-45-removebg-preview.png" class=" w-[100px] h-[100px] mx-auto mt-2 
+              
+                top-4 max-[600px]:relative min-[601px]:w-[120px] min-[601px]:h-[150px]" />
                </div> 
 
               </div>
               
              
-            <div class="flex  justify-between px-4 w-8/12 max-[600px]:w-10/12 ">
+            <div class="flex  justify-between px-4 w-8/12 max-[600px]:w-10/12  ">
 
                 <div class="feeling text-center text-[#003059] font-sans hover:scale-110  scale-selected cursor-pointer" onclick="selectEmotion('Happy', '#FAFCD7', './assets/joy-45-removebg-preview.png', event)">
-                <div class="character-container bg-[#F4F3AC] h-24 w-20   max-[600px]:w-16 max-[600px]:h-16">
+                <div class="character-container bg-[#F4F3AC] h-24 w-20    max-[600px]:w-12 max-[600px]:h-12">
                     <img src="./assets/joy-removebg-preview.png" alt="" class="h-24">
                   </div>
-                  <p class="shadow-2xl">Happy</p>
+                  <p class="shadow-2xl  max-[600px]:text-xs ">Happy</p>
                 </div>
 
                 <div class="feeling text-center text-[#003059] font-sans hover:scale-110 cursor-pointer" onclick="selectEmotion('Anxious', '#FFE4BC', './assets/anxiety-q.png', event)">
-                  <div class="character-container bg-[#F4A84CA1]  h-24 w-20   max-[600px]:w-16 max-[600px]:h-16">
+                  <div class="character-container bg-[#F4A84CA1]  h-24 w-20   max-[600px]:w-12 max-[600px]:h-12">
                     <img src="./assets/anxiety-removebg-preview.png" alt="">
                   </div>
-                  <p class="shadow-2xl">Anxious</p>
+                  <p class="shadow-2xl max-[600px]:text-xs ">Anxious</p>
                 </div>
 
                 <div class="feeling text-center text-[#003059] font-sans hover:scale-110 cursor-pointer" onclick="selectEmotion('Angry', '#FCA38A', './assets/anger-removebg-preview.png', event)">
-                  <div class="character-container bg-[#FF46397D] h-24 w-20   max-[600px]:w-16 max-[600px]:h-16">
+                  <div class="character-container bg-[#FF46397D] h-24 w-20    max-[600px]:w-12 max-[600px]:h-12">
                     <img src="./assets/angry-1.png" alt="">
                   </div>
-                  <p class="shadow-2xl">Angry</p>
+                  <p class="shadow-2xl  max-[600px]:text-xs ">Angry</p>
                 </div>
 
             </div>
             
-            <div class="flex justify-between px-4 w-10/12  max-[600px]:w-full ">
+            <div class="flex justify-between px-4 w-10/12  max-[600px]:w-full  max-[600px]:mb-4 ">
                 <div class="feeling text-center text-[#003059] font-sans hover:scale-110 cursor-pointer" onclick="selectEmotion('Sad', '#C0E2FB', './assets/sad-cry.png', event)">
-                <div class="character-container bg-[#3971FF7D] h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
+                <div class="character-container bg-[#3971FF7D] h-24 w-20  max-[600px]:w-12 max-[600px]:h-12">
                     <img src="./assets/sad-removebg-preview.png" alt="">
                   </div>
-                  <p class="shadow-2xl">Sad</p>
+                  <p class="shadow-2xl max-[600px]:text-xs ">Sad</p>
                 </div>
 
                 <div class="feeling text-center text-[#003059] font-sans hover:scale-110" onclick="selectEmotion('Afraid', '#9F86BAA3', './assets/fear.png', event)">
-                  <div class="character-container bg-[#9F86BAA3] h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
+                  <div class="character-container bg-[#9F86BAA3] h-24 w-20  max-[600px]:w-12 max-[600px]:h-12">
                     <img src="./assets/stress-removebg-preview.png" alt="">
                   </div>
-                  <p class="shadow-2xl">Afraid</p>
+                  <p class="shadow-2xl max-[600px]:text-xs ">Afraid</p>
                 </div>
 
                   <div class="feeling text-center text-[#003059] font-sans hover:scale-110 cursor-pointer " onclick="selectEmotion('Bored', '#d0d1f199', './assets/ennui-stand.png', event)">
-                  <div class="character-container bg-[#08095999] h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
+                  <div class="character-container bg-[#08095999] h-24 w-20  max-[600px]:w-12 max-[600px]:h-12">
                     <img src="./assets/ennui-removebg-preview.png" alt="">
                   </div>
-                  <p class="shadow-2xl">Bored</p>
+                  <p class="shadow-2xl max-[600px]:text-xs ">Bored</p>
                 </div>
 
                   <div class="feeling text-center text-[#003059] font-sans hover:scale-110 cursor-pointer" onclick="selectEmotion('Shy', '#F2E9EC', './assets/shy.png', event)">
-                  <div class="character-container bg-[#EED7DF] h-24 w-20 max-[600px]:w-16 max-[600px]:h-16">
+                  <div class="character-container bg-[#EED7DF] h-24 w-20  max-[600px]:w-12 max-[600px]:h-12">
                     <img src="./assets/shy.png" alt="">
                   </div>
-                  <p class="shadow-2xl">Shy</p>
+                  <p class="shadow-2xl max-[600px]:text-xs ">Shy</p>
                 </div>
 
 
