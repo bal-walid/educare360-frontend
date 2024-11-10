@@ -104,7 +104,39 @@
   @apply  rounded-full shadow-2xl flex justify-center items-center 
 }
 
+.friend-container {
+  @apply w-[4.5rem] h-[4.5rem] rounded-2xl shadow flex justify-center items-end relative
+}
+
+.friend-container img {
+  @apply h-2/3 
+}
+
 
 .character-container img {
   @apply h-3/4
+}
+
+.post {
+  @apply bg-white grid grid-cols-[auto_1fr] rounded-[16px] shadow items-center gap-4 p-2
+}
+
+.post h3 {
+  @apply font-semibold text-figma-blue
+}
+
+.post p {
+  @apply text-sm
+}
+
+.avatar {
+  @apply bg-figma-blue w-12 h-12 rounded-full
+}
+
+.reaction {
+  @apply w-[1.5rem] h-[1rem] rounded-[8px] shadow flex justify-center items-end
+}
+
+.reaction img {
+  @apply w-[1.25rem] h-[0.9rem]
 }
